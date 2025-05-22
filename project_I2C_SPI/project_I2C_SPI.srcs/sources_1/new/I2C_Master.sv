@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2025/05/21 16:26:02
-// Design Name: 
-// Module Name: I2C_Master
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module I2C_Master (
     input logic clk,
@@ -31,8 +11,15 @@ module I2C_Master (
     inout logic sda,
     output logic scl
 );
-    logic start, stop;
-    assign {start, stop, restart, WREN} = CMD;
+    typedef enum logic [3:0] {
+        IDLE_CMD,
+        START_CMD,
+        STOP_CMD,
+        RESTART_CMD,
+        RD_CMD,
+        WR_CMD
+    } CMD_E;
+
     typedef enum logic [3:0] {
         IDLE,
         START1,
@@ -48,6 +35,7 @@ module I2C_Master (
         DATA_END1,
         DATA_END2
     } state_enum;
+
     state_enum state, next;
     logic [$clog2(1000)-1:0] clk_count, clk_count_next;
     logic [7:0] bit_count, bit_count_next;
@@ -67,7 +55,7 @@ module I2C_Master (
     always_comb begin : next_logic
         done = 0;
         sda_reg = 1;
-        ready   = 0;
+        ready = 0;
         case (state)
             IDLE: begin
                 ready = 1;
@@ -75,7 +63,7 @@ module I2C_Master (
                 sda_reg = 1;
                 scl = 1;
                 ready = 1;
-                if (start) begin
+                if (CMD == START_CMD) begin
                     next = START1;
                 end
             end
@@ -104,16 +92,24 @@ module I2C_Master (
                 sda_reg = 0;
                 scl = 0;
                 temp_data_next = tx_data;
-                if (stop) begin  // stop
-                    sda_IO_next = 0;
-                    next = STOP1;
-                end else if (restart) begin  // restart
-                    sda_IO_next = 0;
-                    next = START1;
-                end else if (start) begin  //data
-                    sda_IO_next = WREN;
-                    next = DATA1;
-                end
+                case (CMD)
+                    STOP_CMD: begin
+                        sda_IO_next = 0;
+                        next = STOP1;
+                    end
+                    RESTART_CMD: begin
+                        sda_IO_next = 0;
+                        next = START1;
+                    end
+                    WR_CMD: begin
+                        sda_IO_next = 0;
+                        next = DATA1;
+                    end
+                    RD_CMD: begin
+                        sda_IO_next = 1;
+                        next = DATA1;
+                    end
+                endcase
             end
             DATA1: begin
                 sda_reg = temp_data[7];
@@ -153,7 +149,7 @@ module I2C_Master (
                     temp_data_next = {temp_data[6:0], 1'b0};
                     if (bit_count == 7) begin
                         bit_count_next = 0;
-                        sda_IO_next = ~WREN;
+                        sda_IO_next = 1;
                         next = DATA_END1;
                     end else begin
                         bit_count_next = bit_count + 1;
@@ -178,7 +174,7 @@ module I2C_Master (
                 scl = 1;
                 if (clk_count == 249) begin
                     clk_count_next = 0;
-                    if(sda) begin
+                    if (sda) begin
                         next = STOP1;
                     end else begin
                         next = HOLD;
@@ -190,7 +186,7 @@ module I2C_Master (
             STOP1: begin
                 sda_reg = 0;
                 scl = 1;
-                if (clk_count == 499) begin
+                if (clk_count == 999) begin
                     clk_count_next = 0;
                     next = STOP2;
                 end else begin
@@ -200,12 +196,7 @@ module I2C_Master (
             STOP2: begin
                 sda_reg = 1;
                 scl = 1;
-                if (clk_count == 499) begin
-                    clk_count_next = 0;
-                    next = IDLE;
-                end else begin
-                    clk_count_next = clk_count + 1;
-                end
+                next = IDLE;
             end
         endcase
     end
