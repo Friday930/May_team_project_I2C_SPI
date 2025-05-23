@@ -143,7 +143,6 @@ module I2C_Master (
                 sda_reg = temp_tx_data[7];
                 scl = 0;
                 if (clk_count == 249) begin
-                    temp_rx_data_next = {temp_rx_data[6:0], sda};
                     clk_count_next = 0;
                     next = DATA2;
                 end else begin
@@ -154,6 +153,7 @@ module I2C_Master (
                 sda_reg = temp_tx_data[7];
                 scl = 1;
                 if (clk_count == 249) begin
+                    temp_rx_data_next = {temp_rx_data[6:0], sda};
                     clk_count_next = 0;
                     next = DATA3;
                 end else begin
