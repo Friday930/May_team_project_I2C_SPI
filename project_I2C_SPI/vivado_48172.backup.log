@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 23 09:24:23 2025
+# Process ID: 48172
+# Current directory: C:/harman/May_team_project_I2C_SPI/project_I2C_SPI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7812 C:\harman\May_team_project_I2C_SPI\project_I2C_SPI\project_I2C_SPI.xpr
+# Log file: C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/vivado.log
+# Journal file: C:/harman/May_team_project_I2C_SPI/project_I2C_SPI\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.gen/sources_1'.
+Scanning sources...
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2338] Canceling the changes to the IP catalog. Reverting the catalog back to its previous state.
+INFO: [IP_Flow 19-2340] The IP catalog has been returned to its previous state.
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 23 09:24:54 2025...
+C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.sim/sim_1/behav/xsim/simulate.log"
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 23 09:24:57 2025...

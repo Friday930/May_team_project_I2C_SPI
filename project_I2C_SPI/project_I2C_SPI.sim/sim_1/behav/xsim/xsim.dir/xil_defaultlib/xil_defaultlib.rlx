@@ -1,0 +1,7 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.srcs/sim_1/new/tb_i2c_master.sv,1747961835,systemVerilog,,,,tb_I2C_master_only,,uvm,,,,,,
+C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.srcs/sources_1/new/I2C_Master.sv,1747961631,systemVerilog,,C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.srcs/sim_1/new/tb_i2c_master.sv,,I2C_Master,,uvm,,,,,,
