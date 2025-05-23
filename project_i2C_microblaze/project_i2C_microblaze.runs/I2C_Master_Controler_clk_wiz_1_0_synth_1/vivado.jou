@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 23 15:32:57 2025
+# Process ID: 37320
+# Current directory: C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/I2C_Master_Controler_clk_wiz_1_0_synth_1
+# Command line: vivado.exe -log I2C_Master_Controler_clk_wiz_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source I2C_Master_Controler_clk_wiz_1_0.tcl
+# Log file: C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/I2C_Master_Controler_clk_wiz_1_0_synth_1/I2C_Master_Controler_clk_wiz_1_0.vds
+# Journal file: C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/I2C_Master_Controler_clk_wiz_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source I2C_Master_Controler_clk_wiz_1_0.tcl -notrace
