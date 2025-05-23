@@ -11,3 +11,11 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+refresh_design
+launch_simulation
+open_wave_config C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/tb_I2C_master_only_behav.wcfg
+source tb_I2C_master_only.tcl
+run all

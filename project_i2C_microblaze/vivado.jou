@@ -123,3 +123,11 @@ launch_runs impl_1 -to_step write_bitstream -jobs 16
 wait_on_run impl_1
 open_hw_manager
 connect_hw_server -allow_non_jtag
+file mkdir C:/harman/vitis_workspace/Hardware_Platforms
+write_hw_platform -fixed -include_bit -force -file C:/harman/vitis_workspace/Hardware_Platforms/I2C_Master_Controler_wrapper.xsa
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/impl_1/I2C_Master_Controler_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
