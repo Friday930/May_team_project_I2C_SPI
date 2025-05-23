@@ -3,14 +3,15 @@
 module I2C_Master (
     input logic clk,
     input logic reset,
-    
+
     input logic [3:0] CMD,
     input logic [7:0] tx_data,
     output logic [7:0] rx_data,
     output logic ready,
-    output logic done,
+    output logic tx_done,
+    output logic rx_done,
 
-    inout logic sda,
+    inout  logic sda,
     output logic scl
 );
     typedef enum logic [3:0] {
@@ -42,34 +43,42 @@ module I2C_Master (
     state_enum state, next;
     logic [$clog2(1000)-1:0] clk_count, clk_count_next;
     logic [7:0] bit_count, bit_count_next;
-    logic [7:0] temp_data, temp_data_next;
+    logic [7:0] temp_tx_data, temp_tx_data_next;
+    logic [7:0] temp_rx_data, temp_rx_data_next;
     logic sda_IO, sda_IO_next;
+    logic master_mode;
     logic sda_reg;
 
     assign sda = sda_IO ? 1'bz : sda_reg;
+    assign rx_data = temp_rx_data;
 
     always_ff @(posedge clk, posedge reset) begin : state_logic
         if (reset) begin
-            state     <= IDLE;
-            clk_count <= 0;
-            bit_count <= 0;
-            temp_data <= 0;
-            sda_IO    <= 0;
+            state        <= IDLE;
+            clk_count    <= 0;
+            bit_count    <= 0;
+            temp_tx_data <= 0;
+            temp_rx_data <= 0;
+            sda_IO       <= 0;
         end else begin
-            state <= next;
-            clk_count <= clk_count_next;
-            bit_count <= bit_count_next;
-            temp_data <= temp_data_next;
-            sda_IO <= sda_IO_next;
+            state        <= next;
+            clk_count    <= clk_count_next;
+            bit_count    <= bit_count_next;
+            temp_tx_data <= temp_tx_data_next;
+            temp_rx_data <= temp_rx_data_next;
+            sda_IO       <= sda_IO_next;
         end
     end
     always_comb begin : next_logic
         next = state;
         clk_count_next = clk_count;
         bit_count_next = bit_count;
-        temp_data_next = temp_data;
+        temp_tx_data_next = temp_tx_data;
+        temp_rx_data_next = temp_rx_data;
         sda_IO_next = sda_IO;
-        done = 0;
+        master_mode = 0;
+        tx_done = 0;
+        rx_done = 0;
         sda_reg = 1;
         ready = 0;
         scl = 1;
@@ -108,7 +117,7 @@ module I2C_Master (
                 ready = 1;
                 sda_reg = 0;
                 scl = 0;
-                temp_data_next = tx_data;
+                temp_tx_data_next = tx_data;
                 case (CMD)
                     STOP_CMD: begin
                         sda_IO_next = 0;
@@ -119,20 +128,22 @@ module I2C_Master (
                         next = START1;
                     end
                     WR_CMD: begin
-                        temp_data_next = tx_data;
+                        temp_tx_data_next = tx_data;
                         sda_IO_next = 0;
                         next = DATA1;
                     end
                     RD_CMD: begin
+                        master_mode = 1;
                         sda_IO_next = 1;
                         next = DATA1;
                     end
                 endcase
             end
             DATA1: begin
-                sda_reg = temp_data[7];
+                sda_reg = temp_tx_data[7];
                 scl = 0;
                 if (clk_count == 249) begin
+                    temp_rx_data_next = {temp_rx_data[6:0], sda};
                     clk_count_next = 0;
                     next = DATA2;
                 end else begin
@@ -140,7 +151,7 @@ module I2C_Master (
                 end
             end
             DATA2: begin
-                sda_reg = temp_data[7];
+                sda_reg = temp_tx_data[7];
                 scl = 1;
                 if (clk_count == 249) begin
                     clk_count_next = 0;
@@ -150,7 +161,7 @@ module I2C_Master (
                 end
             end
             DATA3: begin
-                sda_reg = temp_data[7];
+                sda_reg = temp_tx_data[7];
                 scl = 1;
                 if (clk_count == 249) begin
                     clk_count_next = 0;
@@ -160,11 +171,11 @@ module I2C_Master (
                 end
             end
             DATA4: begin
-                sda_reg = temp_data[7];
+                sda_reg = temp_tx_data[7];
                 scl = 0;
                 if (clk_count == 249) begin
                     clk_count_next = 0;
-                    temp_data_next = {temp_data[6:0], 1'b0};
+                    temp_tx_data_next = {temp_tx_data[6:0], 1'b0};
                     if (bit_count == 7) begin
                         bit_count_next = 0;
                         sda_IO_next = 1;
@@ -180,7 +191,8 @@ module I2C_Master (
             DATA_END1: begin  // wait slave ACK; 
                 sda_reg = 0;
                 scl = 0;
-                done = 1;
+                tx_done = ~master_mode;
+                rx_done = master_mode;
                 if (clk_count == 249) begin
                     clk_count_next = 0;
                     next = DATA_END2;
@@ -191,14 +203,10 @@ module I2C_Master (
             DATA_END2: begin  // compare slave ACK; 
                 sda_reg = 0;
                 scl = 1;
-                if (clk_count == 500) begin
+                if (clk_count == 499) begin
                     sda_IO_next = 0;
                     clk_count_next = 0;
-                    if (sda) begin
-                        next = STOP1;
-                    end else begin
-                        next = HOLD;
-                    end
+                    next = sda ? STOP1 : HOLD;
                 end else begin
                     clk_count_next = clk_count + 1;
                 end
@@ -206,7 +214,7 @@ module I2C_Master (
             STOP1: begin
                 sda_reg = 0;
                 scl = 1;
-                if (clk_count == 249) begin
+                if (clk_count == 499) begin
                     clk_count_next = 0;
                     next = STOP2;
                 end else begin
