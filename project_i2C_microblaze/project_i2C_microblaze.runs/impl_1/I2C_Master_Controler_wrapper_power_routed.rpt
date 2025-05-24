@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Fri May 23 15:39:36 2025
+| Date             : Fri May 23 17:27:20 2025
 | Host             : korchamHoyoun24 running 64-bit major release  (build 9200)
 | Command          : report_power -file I2C_Master_Controler_wrapper_power_routed.rpt -pb I2C_Master_Controler_wrapper_power_summary_routed.pb -rpx I2C_Master_Controler_wrapper_power_routed.rpx
 | Design           : I2C_Master_Controler_wrapper
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.207        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.133        |
+| Dynamic (W)              | 0.134        |
 | Device Static (W)        | 0.073        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.0         |
@@ -52,19 +52,19 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.009 |        7 |       --- |             --- |
-| Slice Logic              |     0.004 |     4006 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     1339 |     20800 |            6.44 |
+| Clocks                   |     0.010 |        7 |       --- |             --- |
+| Slice Logic              |     0.004 |     4007 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     1338 |     20800 |            6.43 |
 |   LUT as Distributed RAM |    <0.001 |       64 |      9600 |            0.67 |
 |   CARRY4                 |    <0.001 |       38 |      8150 |            0.47 |
 |   Register               |    <0.001 |     1452 |     41600 |            3.49 |
 |   F7/F8 Muxes            |    <0.001 |      109 |     32600 |            0.33 |
 |   LUT as Shift Register  |    <0.001 |       74 |      9600 |            0.77 |
 |   Others                 |    <0.001 |      517 |       --- |             --- |
-| Signals                  |     0.007 |     2737 |       --- |             --- |
+| Signals                  |     0.007 |     2724 |       --- |             --- |
 | Block RAM                |     0.006 |       32 |        50 |           64.00 |
 | MMCM                     |     0.106 |        1 |         5 |           20.00 |
-| I/O                      |     0.001 |        6 |       106 |            5.66 |
+| I/O                      |     0.002 |        7 |       106 |            6.60 |
 | Static Power             |     0.073 |          |           |                 |
 | Total                    |     0.207 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
@@ -149,7 +149,7 @@ Table of Contents
 +-------------------------------+-----------+
 | Name                          | Power (W) |
 +-------------------------------+-----------+
-| I2C_Master_Controler_wrapper  |     0.133 |
+| I2C_Master_Controler_wrapper  |     0.134 |
 |   I2C_Master_Controler_i      |     0.132 |
 |     I2C_Master_0              |     0.001 |
 |       inst                    |     0.001 |

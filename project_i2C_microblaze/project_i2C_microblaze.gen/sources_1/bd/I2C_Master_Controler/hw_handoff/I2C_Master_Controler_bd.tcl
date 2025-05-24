@@ -245,6 +245,7 @@ proc create_root_design { parentCell } {
 
 
   # Create ports
+  set ready [ create_bd_port -dir O ready ]
   set reset [ create_bd_port -dir I -type rst reset ]
   set_property -dict [ list \
    CONFIG.POLARITY {ACTIVE_HIGH} \
@@ -313,6 +314,7 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net microblaze_0_ilmb_1 [get_bd_intf_pins microblaze_0/ILMB] [get_bd_intf_pins microblaze_0_local_memory/ILMB]
 
   # Create port connections
+  connect_bd_net -net I2C_Master_0_ready [get_bd_ports ready] [get_bd_pins I2C_Master_0/ready]
   connect_bd_net -net I2C_Master_0_scl [get_bd_ports scl] [get_bd_pins I2C_Master_0/scl]
   connect_bd_net -net Net [get_bd_ports sda] [get_bd_pins I2C_Master_0/sda]
   connect_bd_net -net clk_wiz_1_locked [get_bd_pins clk_wiz_1/locked] [get_bd_pins rst_clk_wiz_1_100M/dcm_locked]

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# updatemem v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# 
+# Start of session at: Fri May 23 17:40:16 2025
+# Process ID: 43808
+# Current directory: c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/Vitis/2020.2/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/harman/vitis_workspace/May2025_I2C_Master_/_ide/bitstream/I2C_Master_Controler_wrapper.mmi -data C:/Xilinx/Vitis/2020.2/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc I2C_Master_Controler_i/microblaze_0 -bit C:/harman/vitis_workspace/May2025_I2C_Master_/_ide/bitstream/I2C_Master_Controler_wrapper.bit -out C:/harman/vitis_workspace/May2025_I2C_Master_/_ide/bitstream/download.bit -force
+# Log file: c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/updatemem.log
+# Journal file: c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/Vitis/2020.2/scripts/updatemem/main.tcl -notrace

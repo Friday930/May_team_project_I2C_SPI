@@ -18,9 +18,9 @@
 		output wire [3:0] CMD, // reg0
 		output wire [7:0] tx_data,  // reg1
 		input wire [7:0] rx_data,  // reg2
-		input wire ready,  // reg3[0]
+		input wire ready,  // reg3[2]
 		input wire tx_done,  // reg3[1]
-		input wire rx_done,  // reg3[2]
+		input wire rx_done,  // reg3[0]
 		// User ports ends
 		// Do not modify the ports beyond this line
 

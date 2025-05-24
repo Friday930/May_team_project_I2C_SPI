@@ -19,3 +19,4 @@ launch_simulation
 open_wave_config C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/tb_I2C_master_only_behav.wcfg
 source tb_I2C_master_only.tcl
 run all
+close_sim

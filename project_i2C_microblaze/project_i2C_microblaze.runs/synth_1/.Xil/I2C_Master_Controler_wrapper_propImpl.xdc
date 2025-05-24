@@ -1,4 +1,8 @@
 set_property SRC_FILE_INFO {cfile:C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.srcs/constrs_1/imports/harman/Basys-3-Master.xdc rfile:../../../project_i2C_microblaze.srcs/constrs_1/imports/harman/Basys-3-Master.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:31 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN U16   IOSTANDARD LVCMOS33 } [get_ports {ready }]
+set_property src_info {type:XDC file:1 line:67 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN U18   IOSTANDARD LVCMOS33 } [get_ports reset]
 set_property src_info {type:XDC file:1 line:75 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN J1   IOSTANDARD LVCMOS33 } [get_ports {sda}];#Sch name = JA1
 set_property src_info {type:XDC file:1 line:76 export:INPUT save:INPUT read:READ} [current_design]

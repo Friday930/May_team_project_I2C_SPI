@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Fri May 23 15:32:47 2025
+//Date        : Fri May 23 17:23:52 2025
 //Host        : korchamHoyoun24 running 64-bit major release  (build 9200)
 //Command     : generate_target I2C_Master_Controler.bd
 //Design      : I2C_Master_Controler
@@ -9,14 +9,16 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "I2C_Master_Controler,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=I2C_Master_Controler,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=17,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_board_cnt=4,da_mb_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "I2C_Master_Controler.hwdef" *) 
+(* CORE_GENERATION_INFO = "I2C_Master_Controler,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=I2C_Master_Controler,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=17,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_board_cnt=4,da_mb_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "I2C_Master_Controler.hwdef" *) 
 module I2C_Master_Controler
-   (reset,
+   (ready,
+    reset,
     scl,
     sda,
     sys_clock,
     usb_uart_rxd,
     usb_uart_txd);
+  output ready;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset;
   output scl;
   inout sda;
@@ -24,6 +26,7 @@ module I2C_Master_Controler
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 usb_uart RxD" *) input usb_uart_rxd;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 usb_uart TxD" *) output usb_uart_txd;
 
+  wire I2C_Master_0_ready;
   wire I2C_Master_0_scl;
   wire Net;
   wire axi_uartlite_0_UART_RxD;
@@ -121,12 +124,14 @@ module I2C_Master_Controler
   wire sys_clock_1;
 
   assign axi_uartlite_0_UART_RxD = usb_uart_rxd;
+  assign ready = I2C_Master_0_ready;
   assign reset_1 = reset;
   assign scl = I2C_Master_0_scl;
   assign sys_clock_1 = sys_clock;
   assign usb_uart_txd = axi_uartlite_0_UART_TxD;
-  I2C_Master_Controler_I2C_Master_0_1 I2C_Master_0
-       (.s00_axi_aclk(microblaze_0_Clk),
+  I2C_Master_Controler_I2C_Master_0_2 I2C_Master_0
+       (.ready(I2C_Master_0_ready),
+        .s00_axi_aclk(microblaze_0_Clk),
         .s00_axi_araddr(microblaze_0_axi_periph_M00_AXI_ARADDR[3:0]),
         .s00_axi_aresetn(rst_clk_wiz_1_100M_peripheral_aresetn),
         .s00_axi_arprot(microblaze_0_axi_periph_M00_AXI_ARPROT),

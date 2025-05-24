@@ -39,10 +39,10 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==I2C_Master_
 # IP: bd/I2C_Master_Controler/ip/I2C_Master_Controler_microblaze_0_axi_periph_0/I2C_Master_Controler_microblaze_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==I2C_Master_Controler_microblaze_0_axi_periph_0 || ORIG_REF_NAME==I2C_Master_Controler_microblaze_0_axi_periph_0} -quiet] -quiet
 
-# IP: bd/I2C_Master_Controler/ip/I2C_Master_Controler_I2C_Master_0_1/I2C_Master_Controler_I2C_Master_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==I2C_Master_Controler_I2C_Master_0_1 || ORIG_REF_NAME==I2C_Master_Controler_I2C_Master_0_1} -quiet] -quiet
-
 # IP: bd/I2C_Master_Controler/ip/I2C_Master_Controler_axi_uartlite_0_0/I2C_Master_Controler_axi_uartlite_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==I2C_Master_Controler_axi_uartlite_0_0 || ORIG_REF_NAME==I2C_Master_Controler_axi_uartlite_0_0} -quiet] -quiet
+
+# IP: bd/I2C_Master_Controler/ip/I2C_Master_Controler_I2C_Master_0_2/I2C_Master_Controler_I2C_Master_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==I2C_Master_Controler_I2C_Master_0_2 || ORIG_REF_NAME==I2C_Master_Controler_I2C_Master_0_2} -quiet] -quiet
 
 # XDC: c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/I2C_Master_Controler_ooc.xdc

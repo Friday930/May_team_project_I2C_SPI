@@ -182,3 +182,7 @@ Read Data End!! RxData: ff
 Read Data End!! RxData: 00
 protocol finish.
 $finish called at time : 682755 ns : File "C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.srcs/sim_1/new/tb_i2c_master.sv" Line 185
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May 24 15:42:32 2025...
