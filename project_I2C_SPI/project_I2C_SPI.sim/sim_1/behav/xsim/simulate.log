@@ -1,0 +1,8 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Wtire Data End!! data_box: aa, TxData: aa
+protocol finish.
+Read Data End!! RxData: ff
+Read Data End!! RxData: 00
+protocol finish.
+$finish called at time : 712745 ns : File "C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.srcs/sim_1/new/tb_i2c_master.sv" Line 185
