@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Fri May 23 15:34:24 2025
-// Host        : korchamHoyoun24 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top I2C_Master_Controler_clk_wiz_1_0 -prefix
-//               I2C_Master_Controler_clk_wiz_1_0_ I2C_Master_Controler_clk_wiz_1_0_sim_netlist.v
+// Date        : Sat May 24 22:38:02 2025
+// Host        : HYPC running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim
+//               c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_clk_wiz_1_0/I2C_Master_Controler_clk_wiz_1_0_sim_netlist.v
 // Design      : I2C_Master_Controler_clk_wiz_1_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -35,6 +35,7 @@ module I2C_Master_Controler_clk_wiz_1_0
         .reset(reset));
 endmodule
 
+(* ORIG_REF_NAME = "I2C_Master_Controler_clk_wiz_1_0_clk_wiz" *) 
 module I2C_Master_Controler_clk_wiz_1_0_I2C_Master_Controler_clk_wiz_1_0_clk_wiz
    (clk_out1,
     reset,

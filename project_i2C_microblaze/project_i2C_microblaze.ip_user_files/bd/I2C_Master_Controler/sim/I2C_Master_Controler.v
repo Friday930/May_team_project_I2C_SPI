@@ -1,15 +1,15 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Sat May 24 21:35:57 2025
-//Host        : korchamHoyoun24 running 64-bit major release  (build 9200)
+//Date        : Sun May 25 01:44:57 2025
+//Host        : HYPC running 64-bit major release  (build 9200)
 //Command     : generate_target I2C_Master_Controler.bd
 //Design      : I2C_Master_Controler
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "I2C_Master_Controler,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=I2C_Master_Controler,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=17,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=5,da_board_cnt=4,da_mb_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "I2C_Master_Controler.hwdef" *) 
+(* CORE_GENERATION_INFO = "I2C_Master_Controler,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=I2C_Master_Controler,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=17,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=7,da_board_cnt=4,da_mb_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "I2C_Master_Controler.hwdef" *) 
 module I2C_Master_Controler
    (ready,
     reset,
@@ -129,7 +129,7 @@ module I2C_Master_Controler
   assign scl = I2C_Master_0_scl;
   assign sys_clock_1 = sys_clock;
   assign usb_uart_txd = axi_uartlite_0_UART_TxD;
-  I2C_Master_Controler_I2C_Master_0_3 I2C_Master_0
+  I2C_Master_Controler_I2C_Master_0_5 I2C_Master_0
        (.ready(I2C_Master_0_ready),
         .s00_axi_aclk(microblaze_0_Clk),
         .s00_axi_araddr(microblaze_0_axi_periph_M00_AXI_ARADDR[3:0]),

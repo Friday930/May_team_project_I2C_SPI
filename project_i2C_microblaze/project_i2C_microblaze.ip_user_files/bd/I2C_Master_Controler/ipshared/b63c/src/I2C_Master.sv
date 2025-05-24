@@ -35,9 +35,11 @@ module I2C_Master (
         DATA2,
         DATA3,
         DATA4,
-        DATA_END1,
-        DATA_END2,
-        DATA_END_CL0
+        ACK1,
+        ACK2,
+        ACK3,
+        ACK4,
+        DATA_END
     } state_enum;
 
 
@@ -83,8 +85,8 @@ module I2C_Master (
         tx_done = 0;
         rx_done = 0;
         sda_reg = 1;
-        ready = 0;
         scl = 1;
+        ready = 0;
         case (state)
             IDLE: begin
                 sda_IO_next = 0;
@@ -182,8 +184,7 @@ module I2C_Master (
                     temp_tx_data_next = {temp_tx_data[6:0], 1'b0};
                     if (bit_count == 7) begin
                         bit_count_next = 0;
-                        sda_IO_next = 1;
-                        next = DATA_END1;
+                        next = ACK1;
                     end else begin
                         bit_count_next = bit_count + 1;
                         next = DATA1;
@@ -192,32 +193,54 @@ module I2C_Master (
                     clk_count_next = clk_count + 1;
                 end
             end
-            DATA_END1: begin  // wait slave ACK; 
+            ACK1: begin  // wait slave ACK; 
+                sda_reg = 0;
+                scl = 0;
+                if (clk_count == 249) begin
+                    sda_IO_next = 1;
+                    clk_count_next = 0;
+                    next = ACK2;
+                end else begin
+                    clk_count_next = clk_count + 1;
+                end
+            end
+            ACK2: begin  // wait slave ACK; 
+                sda_reg = 0;
+                scl = 1;
+                if (clk_count == 249) begin
+                    clk_count_next = 0;
+                    next = ACK3;
+                end else begin
+                    clk_count_next = clk_count + 1;
+                end
+            end
+            ACK3: begin  // wait slave ACK; 
+                sda_reg = 0;
+                scl = 1;
+                if (clk_count == 249) begin
+                    clk_count_next = 0;
+                    next = ACK4;
+                end else begin
+                    clk_count_next = clk_count + 1;
+                end
+            end
+            ACK4: begin  // compare slave ACK; 
                 sda_reg = 0;
                 scl = 0;
                 tx_done = ~master_mode;
                 rx_done = master_mode;
-                if (clk_count == 499) begin
-                    clk_count_next = 0;
-                    next = DATA_END2;
-                end else begin
-                    clk_count_next = clk_count + 1;
-                end
-            end
-            DATA_END2: begin  // compare slave ACK; 
-                sda_reg = 0;
-                scl = 1;
-                if (clk_count == 499) begin
+                if (clk_count == 249) begin
                     sda_IO_next = 0;
                     clk_count_next = 0;
-                    next = sda ? STOP1 : DATA_END_CL0;
+                    next = sda ? STOP1 : DATA_END;
                 end else begin
                     clk_count_next = clk_count + 1;
                 end
             end
-            DATA_END_CL0: begin
+            DATA_END: begin
+                sda_reg = 0;
                 scl = 0;
-                if (clk_count == 499) begin
+                if (clk_count == 249) begin
                     sda_IO_next = 0;
                     clk_count_next = 0;
                     next = HOLD;
@@ -236,8 +259,8 @@ module I2C_Master (
                 end
             end
             STOP2: begin
-                sda_reg = 1;
                 scl = 1;
+                sda_reg = 1;
                 next = IDLE;
             end
         endcase

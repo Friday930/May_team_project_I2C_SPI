@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Fri May 23 15:34:30 2025
-// Host        : korchamHoyoun24 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top I2C_Master_Controler_dlmb_bram_if_cntlr_0 -prefix
-//               I2C_Master_Controler_dlmb_bram_if_cntlr_0_ I2C_Master_Controler_dlmb_bram_if_cntlr_0_sim_netlist.v
+// Date        : Sat May 24 22:37:53 2025
+// Host        : HYPC running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim
+//               c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_dlmb_bram_if_cntlr_0/I2C_Master_Controler_dlmb_bram_if_cntlr_0_sim_netlist.v
 // Design      : I2C_Master_Controler_dlmb_bram_if_cntlr_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -221,7 +221,7 @@ endmodule
 (* C_MASK = "64'b0000000000000000000000000000000000000000001000000000000000000000" *) (* C_MASK1 = "64'b0000000000000000000000000000000000000000100000000000000000000000" *) (* C_MASK2 = "64'b0000000000000000000000000000000000000000100000000000000000000000" *) 
 (* C_MASK3 = "64'b0000000000000000000000000000000000000000100000000000000000000000" *) (* C_NUM_LMB = "1" *) (* C_S_AXI_CTRL_ADDR_WIDTH = "32" *) 
 (* C_S_AXI_CTRL_BASEADDR = "32'b11111111111111111111111111111111" *) (* C_S_AXI_CTRL_DATA_WIDTH = "32" *) (* C_S_AXI_CTRL_HIGHADDR = "32'b00000000000000000000000000000000" *) 
-(* C_UE_FAILING_REGISTERS = "0" *) (* C_WRITE_ACCESS = "2" *) 
+(* C_UE_FAILING_REGISTERS = "0" *) (* C_WRITE_ACCESS = "2" *) (* ORIG_REF_NAME = "lmb_bram_if_cntlr" *) 
 module I2C_Master_Controler_dlmb_bram_if_cntlr_0_lmb_bram_if_cntlr
    (LMB_Clk,
     LMB_Rst,
