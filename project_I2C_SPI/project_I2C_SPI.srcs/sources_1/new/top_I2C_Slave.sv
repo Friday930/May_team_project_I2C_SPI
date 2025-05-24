@@ -5,7 +5,7 @@ module top_I2C_Slave (
     input  logic       reset,
     inout  logic       sda,
     input  logic       scl,
-    input  logic [3:0] btn,
+    input  logic       btn,
     output logic [3:0] an,
     output logic [7:0] seg
 );
@@ -25,20 +25,34 @@ module top_I2C_Slave (
         .slv_reg3(slv_reg3)
     );
 
+    btn_debounce u_btn_debounce (
+        .clk  (clk),
+        .reset(reset),
+        .i_btn(btn),
+        .o_btn(btdb)
+    );
+
+    logic [1:0] sel;
+    always_ff @(posedge btdb, posedge reset) begin : blockName
+        if (reset) begin
+            sel = 0;
+        end else sel <= sel + 1;
+    end
+
     logic [7:0] bcd;
-    always_ff @( posedge clock ) begin : blockName
-        case (btdb)
-            4'b0001: bcd = slv_reg0;
-            4'b0010: bcd = slv_reg1;
-            4'b0100: bcd = slv_reg2;
-            4'b1000: bcd = slv_reg3;
+    always_comb begin : fndDataSel
+        case (sel)
+            0: bcd = slv_reg0;
+            1: bcd = slv_reg1;
+            2: bcd = slv_reg2;
+            3: bcd = slv_reg3;
         endcase
     end
 
     fndController u_fndController (
         .clk    (clk),
         .reset  (reset),
-        .fndData(slv_reg0),
+        .fndData(bcd),
         .fndDot (4'b1111),
         .fndCom (an),
         .fndFont(seg)
