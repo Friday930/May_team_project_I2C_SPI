@@ -36,7 +36,8 @@ module I2C_Master (
         DATA3,
         DATA4,
         DATA_END1,
-        DATA_END2
+        DATA_END2,
+        DATA_END_CL0
     } state_enum;
 
 
@@ -209,7 +210,17 @@ module I2C_Master (
                 if (clk_count == 499) begin
                     sda_IO_next = 0;
                     clk_count_next = 0;
-                    next = sda ? STOP1 : HOLD;
+                    next = sda ? STOP1 : DATA_END_CL0;
+                end else begin
+                    clk_count_next = clk_count + 1;
+                end
+            end
+            DATA_END_CL0: begin
+                scl = 0;
+                if (clk_count == 499) begin
+                    sda_IO_next = 0;
+                    clk_count_next = 0;
+                    next = HOLD;
                 end else begin
                     clk_count_next = clk_count + 1;
                 end
