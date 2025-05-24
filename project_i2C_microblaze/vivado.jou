@@ -31,3 +31,10 @@ refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
 reset_run synth_1
 reset_run I2C_Master_Controler_I2C_Master_0_3_synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/impl_1/I2C_Master_Controler_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+write_hw_platform -fixed -include_bit -force -file D:/Downloads/vitis_workspace/Hardware_Platforms/I2C_Master_Controler_wrapper.xsa
