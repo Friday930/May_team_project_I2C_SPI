@@ -48,7 +48,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="basys3"/>
-    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTXSimLaunchSim" Val="1"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -83,14 +83,11 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_dlmb_v10_0/I2C_Master_Controler_dlmb_v10_0.xci">
-          <Proxy FileSetName="I2C_Master_Controler_dlmb_v10_0"/>
+        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_mdm_1_0/I2C_Master_Controler_mdm_1_0.xci">
+          <Proxy FileSetName="I2C_Master_Controler_mdm_1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_microblaze_0_0/I2C_Master_Controler_microblaze_0_0.xci">
-          <Proxy FileSetName="I2C_Master_Controler_microblaze_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_dlmb_bram_if_cntlr_0/I2C_Master_Controler_dlmb_bram_if_cntlr_0.xci">
-          <Proxy FileSetName="I2C_Master_Controler_dlmb_bram_if_cntlr_0"/>
+        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_xbar_0/I2C_Master_Controler_xbar_0.xci">
+          <Proxy FileSetName="I2C_Master_Controler_xbar_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_ilmb_bram_if_cntlr_0/I2C_Master_Controler_ilmb_bram_if_cntlr_0.xci">
           <Proxy FileSetName="I2C_Master_Controler_ilmb_bram_if_cntlr_0"/>
@@ -98,26 +95,29 @@
         <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_lmb_bram_0/I2C_Master_Controler_lmb_bram_0.xci">
           <Proxy FileSetName="I2C_Master_Controler_lmb_bram_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_mdm_1_0/I2C_Master_Controler_mdm_1_0.xci">
-          <Proxy FileSetName="I2C_Master_Controler_mdm_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_clk_wiz_1_0/I2C_Master_Controler_clk_wiz_1_0.xci">
-          <Proxy FileSetName="I2C_Master_Controler_clk_wiz_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_ilmb_v10_0/I2C_Master_Controler_ilmb_v10_0.xci">
-          <Proxy FileSetName="I2C_Master_Controler_ilmb_v10_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_xbar_0/I2C_Master_Controler_xbar_0.xci">
-          <Proxy FileSetName="I2C_Master_Controler_xbar_0"/>
+        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_rst_clk_wiz_1_100M_0/I2C_Master_Controler_rst_clk_wiz_1_100M_0.xci">
+          <Proxy FileSetName="I2C_Master_Controler_rst_clk_wiz_1_100M_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_axi_uartlite_0_0/I2C_Master_Controler_axi_uartlite_0_0.xci">
           <Proxy FileSetName="I2C_Master_Controler_axi_uartlite_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_rst_clk_wiz_1_100M_0/I2C_Master_Controler_rst_clk_wiz_1_100M_0.xci">
-          <Proxy FileSetName="I2C_Master_Controler_rst_clk_wiz_1_100M_0"/>
+        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_clk_wiz_1_0/I2C_Master_Controler_clk_wiz_1_0.xci">
+          <Proxy FileSetName="I2C_Master_Controler_clk_wiz_1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_I2C_Master_0_2/I2C_Master_Controler_I2C_Master_0_2.xci">
           <Proxy FileSetName="I2C_Master_Controler_I2C_Master_0_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_dlmb_bram_if_cntlr_0/I2C_Master_Controler_dlmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="I2C_Master_Controler_dlmb_bram_if_cntlr_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_ilmb_v10_0/I2C_Master_Controler_ilmb_v10_0.xci">
+          <Proxy FileSetName="I2C_Master_Controler_ilmb_v10_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_microblaze_0_0/I2C_Master_Controler_microblaze_0_0.xci">
+          <Proxy FileSetName="I2C_Master_Controler_microblaze_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_dlmb_v10_0/I2C_Master_Controler_dlmb_v10_0.xci">
+          <Proxy FileSetName="I2C_Master_Controler_dlmb_v10_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/I2C_Master_Controler/hdl/I2C_Master_Controler_wrapper.v">
@@ -274,9 +274,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_dlmb_v10_0_synth_1" Type="Ft3:Synth" SrcSet="I2C_Master_Controler_dlmb_v10_0" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_dlmb_v10_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/I2C_Master_Controler_dlmb_v10_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_dlmb_v10_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -286,9 +284,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_microblaze_0_0_synth_1" Type="Ft3:Synth" SrcSet="I2C_Master_Controler_microblaze_0_0" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_microblaze_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/I2C_Master_Controler_microblaze_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_microblaze_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -298,9 +294,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_dlmb_bram_if_cntlr_0_synth_1" Type="Ft3:Synth" SrcSet="I2C_Master_Controler_dlmb_bram_if_cntlr_0" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_dlmb_bram_if_cntlr_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/I2C_Master_Controler_dlmb_bram_if_cntlr_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_dlmb_bram_if_cntlr_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -310,9 +304,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_ilmb_bram_if_cntlr_0_synth_1" Type="Ft3:Synth" SrcSet="I2C_Master_Controler_ilmb_bram_if_cntlr_0" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_ilmb_bram_if_cntlr_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/I2C_Master_Controler_ilmb_bram_if_cntlr_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_ilmb_bram_if_cntlr_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -322,9 +314,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_lmb_bram_0_synth_1" Type="Ft3:Synth" SrcSet="I2C_Master_Controler_lmb_bram_0" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_lmb_bram_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/I2C_Master_Controler_lmb_bram_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_lmb_bram_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -334,9 +324,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_mdm_1_0_synth_1" Type="Ft3:Synth" SrcSet="I2C_Master_Controler_mdm_1_0" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_mdm_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/I2C_Master_Controler_mdm_1_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_mdm_1_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -346,9 +334,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_clk_wiz_1_0_synth_1" Type="Ft3:Synth" SrcSet="I2C_Master_Controler_clk_wiz_1_0" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_clk_wiz_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/I2C_Master_Controler_clk_wiz_1_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_clk_wiz_1_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -358,9 +344,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_ilmb_v10_0_synth_1" Type="Ft3:Synth" SrcSet="I2C_Master_Controler_ilmb_v10_0" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_ilmb_v10_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/I2C_Master_Controler_ilmb_v10_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_ilmb_v10_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -370,9 +354,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="I2C_Master_Controler_xbar_0" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/I2C_Master_Controler_xbar_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_xbar_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -382,9 +364,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_axi_uartlite_0_0_synth_1" Type="Ft3:Synth" SrcSet="I2C_Master_Controler_axi_uartlite_0_0" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_axi_uartlite_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/I2C_Master_Controler_axi_uartlite_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_axi_uartlite_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -394,9 +374,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_rst_clk_wiz_1_100M_0_synth_1" Type="Ft3:Synth" SrcSet="I2C_Master_Controler_rst_clk_wiz_1_100M_0" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_rst_clk_wiz_1_100M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/I2C_Master_Controler_rst_clk_wiz_1_100M_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_rst_clk_wiz_1_100M_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -406,9 +384,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_I2C_Master_0_2_synth_1" Type="Ft3:Synth" SrcSet="I2C_Master_Controler_I2C_Master_0_2" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_I2C_Master_0_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/I2C_Master_Controler_I2C_Master_0_2_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_I2C_Master_0_2_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -436,9 +412,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_dlmb_v10_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_dlmb_v10_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="I2C_Master_Controler_dlmb_v10_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_dlmb_v10_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -455,9 +429,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_microblaze_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_microblaze_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="I2C_Master_Controler_microblaze_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_microblaze_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -474,9 +446,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_dlmb_bram_if_cntlr_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_dlmb_bram_if_cntlr_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="I2C_Master_Controler_dlmb_bram_if_cntlr_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_dlmb_bram_if_cntlr_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -493,9 +463,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_ilmb_bram_if_cntlr_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_ilmb_bram_if_cntlr_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="I2C_Master_Controler_ilmb_bram_if_cntlr_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_ilmb_bram_if_cntlr_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -512,9 +480,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_lmb_bram_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_lmb_bram_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="I2C_Master_Controler_lmb_bram_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_lmb_bram_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -531,9 +497,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_mdm_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_mdm_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="I2C_Master_Controler_mdm_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_mdm_1_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -550,9 +514,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_clk_wiz_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_clk_wiz_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="I2C_Master_Controler_clk_wiz_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_clk_wiz_1_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -569,9 +531,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_ilmb_v10_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_ilmb_v10_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="I2C_Master_Controler_ilmb_v10_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_ilmb_v10_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -588,9 +548,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="I2C_Master_Controler_xbar_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_xbar_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -607,9 +565,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_axi_uartlite_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_axi_uartlite_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="I2C_Master_Controler_axi_uartlite_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_axi_uartlite_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -626,9 +582,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_rst_clk_wiz_1_100M_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_rst_clk_wiz_1_100M_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="I2C_Master_Controler_rst_clk_wiz_1_100M_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_rst_clk_wiz_1_100M_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -645,9 +599,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_I2C_Master_0_2_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_I2C_Master_0_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="I2C_Master_Controler_I2C_Master_0_2_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_I2C_Master_0_2_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_i2C_microblaze.ip_user_files/bd/I2C_Master_Controler/ip/I2C_Master_Controler_microblaze_0_0/sim/I2C_Master_Controler_microblaze_0_0.vhd" \
+"../../../../project_i2C_microblaze.ip_user_files/bd/I2C_Master_Controler/ip/I2C_Master_Controler_dlmb_v10_0/sim/I2C_Master_Controler_dlmb_v10_0.vhd" \
+"../../../../project_i2C_microblaze.ip_user_files/bd/I2C_Master_Controler/ip/I2C_Master_Controler_ilmb_v10_0/sim/I2C_Master_Controler_ilmb_v10_0.vhd" \
+"../../../../project_i2C_microblaze.ip_user_files/bd/I2C_Master_Controler/ip/I2C_Master_Controler_dlmb_bram_if_cntlr_0/sim/I2C_Master_Controler_dlmb_bram_if_cntlr_0.vhd" \
+"../../../../project_i2C_microblaze.ip_user_files/bd/I2C_Master_Controler/ip/I2C_Master_Controler_ilmb_bram_if_cntlr_0/sim/I2C_Master_Controler_ilmb_bram_if_cntlr_0.vhd" \
+"../../../../project_i2C_microblaze.ip_user_files/bd/I2C_Master_Controler/ip/I2C_Master_Controler_mdm_1_0/sim/I2C_Master_Controler_mdm_1_0.vhd" \
+"../../../../project_i2C_microblaze.ip_user_files/bd/I2C_Master_Controler/ip/I2C_Master_Controler_rst_clk_wiz_1_100M_0/sim/I2C_Master_Controler_rst_clk_wiz_1_100M_0.vhd" \
+"../../../../project_i2C_microblaze.ip_user_files/bd/I2C_Master_Controler/ip/I2C_Master_Controler_axi_uartlite_0_0/sim/I2C_Master_Controler_axi_uartlite_0_0.vhd" \
+
+# Do not sort compile order
+nosort
