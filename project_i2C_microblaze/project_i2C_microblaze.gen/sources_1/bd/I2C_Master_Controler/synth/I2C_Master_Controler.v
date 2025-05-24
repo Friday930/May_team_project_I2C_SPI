@@ -1,8 +1,8 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Sat May 24 21:35:57 2025
-//Host        : korchamHoyoun24 running 64-bit major release  (build 9200)
+//Date        : Sat May 24 22:35:25 2025
+//Host        : HYPC running 64-bit major release  (build 9200)
 //Command     : generate_target I2C_Master_Controler.bd
 //Design      : I2C_Master_Controler
 //Purpose     : IP block netlist

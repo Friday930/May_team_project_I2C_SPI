@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Fri May 23 15:34:39 2025
-// Host        : korchamHoyoun24 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top I2C_Master_Controler_xbar_0 -prefix
-//               I2C_Master_Controler_xbar_0_ I2C_Master_Controler_xbar_0_sim_netlist.v
+// Date        : Sat May 24 22:38:14 2025
+// Host        : HYPC running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim
+//               c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_xbar_0/I2C_Master_Controler_xbar_0_sim_netlist.v
 // Design      : I2C_Master_Controler_xbar_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -305,6 +305,7 @@ module I2C_Master_Controler_xbar_0
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "axi_crossbar_v2_1_23_addr_arbiter_sasd" *) 
 module I2C_Master_Controler_xbar_0_axi_crossbar_v2_1_23_addr_arbiter_sasd
    (m_valid_i,
     SR,
@@ -1451,13 +1452,13 @@ endmodule
 (* C_NUM_MASTER_SLOTS = "2" *) (* C_NUM_SLAVE_SLOTS = "1" *) (* C_R_REGISTER = "1" *) 
 (* C_S_AXI_ARB_PRIORITY = "0" *) (* C_S_AXI_BASE_ID = "0" *) (* C_S_AXI_READ_ACCEPTANCE = "1" *) 
 (* C_S_AXI_SINGLE_THREAD = "1" *) (* C_S_AXI_THREAD_ID_WIDTH = "0" *) (* C_S_AXI_WRITE_ACCEPTANCE = "1" *) 
-(* DowngradeIPIdentifiedWarnings = "yes" *) (* P_ADDR_DECODE = "1" *) (* P_AXI3 = "1" *) 
-(* P_AXI4 = "0" *) (* P_AXILITE = "2" *) (* P_AXILITE_SIZE = "3'b010" *) 
-(* P_FAMILY = "artix7" *) (* P_INCR = "2'b01" *) (* P_LEN = "8" *) 
-(* P_LOCK = "1" *) (* P_M_AXI_ERR_MODE = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) (* P_M_AXI_SUPPORTS_READ = "2'b11" *) 
-(* P_M_AXI_SUPPORTS_WRITE = "2'b11" *) (* P_ONES = "65'b11111111111111111111111111111111111111111111111111111111111111111" *) (* P_RANGE_CHECK = "1" *) 
-(* P_S_AXI_BASE_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) (* P_S_AXI_HIGH_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) (* P_S_AXI_SUPPORTS_READ = "1'b1" *) 
-(* P_S_AXI_SUPPORTS_WRITE = "1'b1" *) 
+(* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "axi_crossbar_v2_1_23_axi_crossbar" *) (* P_ADDR_DECODE = "1" *) 
+(* P_AXI3 = "1" *) (* P_AXI4 = "0" *) (* P_AXILITE = "2" *) 
+(* P_AXILITE_SIZE = "3'b010" *) (* P_FAMILY = "artix7" *) (* P_INCR = "2'b01" *) 
+(* P_LEN = "8" *) (* P_LOCK = "1" *) (* P_M_AXI_ERR_MODE = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) 
+(* P_M_AXI_SUPPORTS_READ = "2'b11" *) (* P_M_AXI_SUPPORTS_WRITE = "2'b11" *) (* P_ONES = "65'b11111111111111111111111111111111111111111111111111111111111111111" *) 
+(* P_RANGE_CHECK = "1" *) (* P_S_AXI_BASE_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) (* P_S_AXI_HIGH_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) 
+(* P_S_AXI_SUPPORTS_READ = "1'b1" *) (* P_S_AXI_SUPPORTS_WRITE = "1'b1" *) 
 module I2C_Master_Controler_xbar_0_axi_crossbar_v2_1_23_axi_crossbar
    (aclk,
     aresetn,
@@ -1855,6 +1856,7 @@ module I2C_Master_Controler_xbar_0_axi_crossbar_v2_1_23_axi_crossbar
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "axi_crossbar_v2_1_23_crossbar_sasd" *) 
 module I2C_Master_Controler_xbar_0_axi_crossbar_v2_1_23_crossbar_sasd
    (Q,
     \m_payload_i_reg[34] ,
@@ -2164,6 +2166,7 @@ module I2C_Master_Controler_xbar_0_axi_crossbar_v2_1_23_crossbar_sasd
         .\m_ready_d_reg[2]_2 (addr_arbiter_inst_n_9));
 endmodule
 
+(* ORIG_REF_NAME = "axi_crossbar_v2_1_23_decerr_slave" *) 
 module I2C_Master_Controler_xbar_0_axi_crossbar_v2_1_23_decerr_slave
    (mi_bvalid,
     mi_wready,
@@ -2348,6 +2351,7 @@ module I2C_Master_Controler_xbar_0_axi_crossbar_v2_1_23_decerr_slave
         .O(f_mux_return__1));
 endmodule
 
+(* ORIG_REF_NAME = "axi_crossbar_v2_1_23_splitter" *) 
 module I2C_Master_Controler_xbar_0_axi_crossbar_v2_1_23_splitter
    (\m_ready_d_reg[0]_0 ,
     m_ready_d,
@@ -2500,6 +2504,7 @@ module I2C_Master_Controler_xbar_0_axi_crossbar_v2_1_23_splitter__parameterized0
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "axi_register_slice_v2_1_22_axic_register_slice" *) 
 module I2C_Master_Controler_xbar_0_axi_register_slice_v2_1_22_axic_register_slice
    (sr_rvalid,
     aa_rready,

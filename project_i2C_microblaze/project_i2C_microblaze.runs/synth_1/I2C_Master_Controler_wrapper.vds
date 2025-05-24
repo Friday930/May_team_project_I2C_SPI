@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat May 24 21:40:23 2025
-# Process ID: 63920
+# Start of session at: Sat May 24 22:38:34 2025
+# Process ID: 14952
 # Current directory: C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1
 # Command line: vivado.exe -log I2C_Master_Controler_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source I2C_Master_Controler_wrapper.tcl
 # Log file: C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/I2C_Master_Controler_wrapper.vds
@@ -13,7 +13,7 @@ source I2C_Master_Controler_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/harman/May_team_project_I2C_SPI/ip_repo/myip_1.0'. The path is contained within another repository.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/harman/May_team_project_I2C_SPI/ip_repo'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.cache/ip 
 Command: synth_design -top I2C_Master_Controler_wrapper -part xc7a35tcpg236-1
@@ -23,24 +23,24 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17876
+INFO: [Synth 8-7075] Helper process launched with PID 18616
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1107.047 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1171.395 ; gain = 45.941
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_wrapper' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/hdl/I2C_Master_Controler_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler' [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:13]
-INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_I2C_Master_0_3' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_I2C_Master_0_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_I2C_Master_0_3' (1#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_I2C_Master_0_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_axi_uartlite_0_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_axi_uartlite_0_0' (2#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_I2C_Master_0_3' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_I2C_Master_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_I2C_Master_0_3' (1#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_I2C_Master_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_axi_uartlite_0_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_axi_uartlite_0_0' (2#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_axi_uartlite_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'I2C_Master_Controler_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:157]
 WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'I2C_Master_Controler_axi_uartlite_0_0' has 22 connections declared, but only 21 given [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:157]
-INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_clk_wiz_1_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_clk_wiz_1_0' (3#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_mdm_1_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_mdm_1_0' (4#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_microblaze_0_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_microblaze_0_0' (5#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_clk_wiz_1_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_clk_wiz_1_0' (3#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_mdm_1_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_mdm_1_0' (4#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_microblaze_0_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_microblaze_0_0' (5#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_microblaze_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'I2C_Master_Controler_microblaze_0_0' is unconnected for instance 'microblaze_0' [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:197]
 WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'I2C_Master_Controler_microblaze_0_0' has 52 connections declared, but only 51 given [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:197]
 INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_microblaze_0_axi_periph_0' [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:346]
@@ -50,50 +50,50 @@ INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_K8ZDWH' [c:/harman/Ma
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_K8ZDWH' (7#1) [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:958]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1I9SNMZ' [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:1324]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1I9SNMZ' (8#1) [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:1324]
-INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_xbar_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_xbar_0' (9#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_xbar_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_xbar_0' (9#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_xbar_0_stub.v:6]
 WARNING: [Synth 8-689] width (3) of port connection 'm_axi_arprot' does not match port width (6) of module 'I2C_Master_Controler_xbar_0' [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:773]
 WARNING: [Synth 8-689] width (3) of port connection 'm_axi_awprot' does not match port width (6) of module 'I2C_Master_Controler_xbar_0' [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:777]
 INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_microblaze_0_axi_periph_0' (10#1) [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:346]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_4DYRL' [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:1090]
-INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_dlmb_bram_if_cntlr_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_dlmb_bram_if_cntlr_0' (11#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_dlmb_v10_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_dlmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_dlmb_v10_0' (12#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_dlmb_bram_if_cntlr_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_dlmb_bram_if_cntlr_0' (11#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_dlmb_v10_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_dlmb_v10_0' (12#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_dlmb_v10_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'I2C_Master_Controler_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:1236]
 WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'I2C_Master_Controler_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:1236]
-INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_ilmb_bram_if_cntlr_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_ilmb_bram_if_cntlr_0' (13#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_ilmb_v10_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_ilmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_ilmb_v10_0' (14#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_ilmb_bram_if_cntlr_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_ilmb_bram_if_cntlr_0' (13#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_ilmb_v10_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_ilmb_v10_0' (14#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_ilmb_v10_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'I2C_Master_Controler_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:1282]
 WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'I2C_Master_Controler_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:1282]
-INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_lmb_bram_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_lmb_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_lmb_bram_0' (15#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_lmb_bram_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_lmb_bram_0' (15#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_lmb_bram_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'I2C_Master_Controler_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:1307]
 WARNING: [Synth 8-7071] port 'rstb_busy' of module 'I2C_Master_Controler_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:1307]
 WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'I2C_Master_Controler_lmb_bram_0' has 16 connections declared, but only 14 given [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:1307]
 INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_4DYRL' (16#1) [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:1090]
-INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_rst_clk_wiz_1_100M_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_rst_clk_wiz_1_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_rst_clk_wiz_1_100M_0' (17#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-63920-korchamHoyoun24/realtime/I2C_Master_Controler_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Master_Controler_rst_clk_wiz_1_100M_0' [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_rst_clk_wiz_1_100M_0' (17#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/.Xil/Vivado-14952-HYPC/realtime/I2C_Master_Controler_rst_clk_wiz_1_100M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'I2C_Master_Controler_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:335]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'I2C_Master_Controler_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:335]
 WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'I2C_Master_Controler_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:335]
 INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler' (18#1) [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/synth/I2C_Master_Controler.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'I2C_Master_Controler_wrapper' (19#1) [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/hdl/I2C_Master_Controler_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1107.047 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1227.652 ; gain = 102.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1107.047 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1227.652 ; gain = 102.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1107.047 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1227.652 ; gain = 102.199
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1107.047 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1227.652 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -102,8 +102,8 @@ Parsing XDC File [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/proj
 Finished Parsing XDC File [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_microblaze_0_0/I2C_Master_Controler_microblaze_0_0/I2C_Master_Controler_microblaze_0_0_in_context.xdc] for cell 'I2C_Master_Controler_i/microblaze_0'
 Parsing XDC File [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_dlmb_v10_0/I2C_Master_Controler_dlmb_v10_0/I2C_Master_Controler_dlmb_v10_0_in_context.xdc] for cell 'I2C_Master_Controler_i/microblaze_0_local_memory/dlmb_v10'
 Finished Parsing XDC File [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_dlmb_v10_0/I2C_Master_Controler_dlmb_v10_0/I2C_Master_Controler_dlmb_v10_0_in_context.xdc] for cell 'I2C_Master_Controler_i/microblaze_0_local_memory/dlmb_v10'
-Parsing XDC File [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_ilmb_v10_0/I2C_Master_Controler_ilmb_v10_0/I2C_Master_Controler_dlmb_v10_0_in_context.xdc] for cell 'I2C_Master_Controler_i/microblaze_0_local_memory/ilmb_v10'
-Finished Parsing XDC File [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_ilmb_v10_0/I2C_Master_Controler_ilmb_v10_0/I2C_Master_Controler_dlmb_v10_0_in_context.xdc] for cell 'I2C_Master_Controler_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_ilmb_v10_0/I2C_Master_Controler_ilmb_v10_0/I2C_Master_Controler_ilmb_v10_0_in_context.xdc] for cell 'I2C_Master_Controler_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_ilmb_v10_0/I2C_Master_Controler_ilmb_v10_0/I2C_Master_Controler_ilmb_v10_0_in_context.xdc] for cell 'I2C_Master_Controler_i/microblaze_0_local_memory/ilmb_v10'
 Parsing XDC File [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_dlmb_bram_if_cntlr_0/I2C_Master_Controler_dlmb_bram_if_cntlr_0/I2C_Master_Controler_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'I2C_Master_Controler_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
 Finished Parsing XDC File [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_dlmb_bram_if_cntlr_0/I2C_Master_Controler_dlmb_bram_if_cntlr_0/I2C_Master_Controler_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'I2C_Master_Controler_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
 Parsing XDC File [c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_ilmb_bram_if_cntlr_0/I2C_Master_Controler_ilmb_bram_if_cntlr_0/I2C_Master_Controler_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'I2C_Master_Controler_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
@@ -130,21 +130,21 @@ Parsing XDC File [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/proj
 Finished Parsing XDC File [C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1132.508 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1261.672 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1132.508 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1261.672 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'I2C_Master_Controler_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1136.492 ; gain = 29.445
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1265.680 ; gain = 140.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1136.492 ; gain = 29.445
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1265.680 ; gain = 140.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -166,10 +166,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for I2C_Master_Controler_i/microblaze
 Applied set_property KEEP_HIERARCHY = SOFT for I2C_Master_Controler_i/axi_uartlite_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for I2C_Master_Controler_i/I2C_Master_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1136.492 ; gain = 29.445
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1265.680 ; gain = 140.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1136.492 ; gain = 29.445
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1265.680 ; gain = 140.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -191,25 +191,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1136.492 ; gain = 29.445
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1265.680 ; gain = 140.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1185.930 ; gain = 78.883
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1308.973 ; gain = 183.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1186.156 ; gain = 79.109
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1309.195 ; gain = 183.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1205.266 ; gain = 98.219
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1328.297 ; gain = 202.844
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -227,37 +227,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1211.004 ; gain = 103.957
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1335.094 ; gain = 209.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1211.004 ; gain = 103.957
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1335.094 ; gain = 209.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1211.004 ; gain = 103.957
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1335.094 ; gain = 209.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1211.004 ; gain = 103.957
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1335.094 ; gain = 209.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1211.004 ; gain = 103.957
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1335.094 ; gain = 209.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1211.004 ; gain = 103.957
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1335.094 ; gain = 209.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -301,23 +301,23 @@ Report Cell Usage:
 |14    |OBUF                                    |     3|
 +------+----------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1211.004 ; gain = 103.957
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1335.094 ; gain = 209.641
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 1211.004 ; gain = 74.512
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1211.004 ; gain = 103.957
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1335.094 ; gain = 171.613
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1335.094 ; gain = 209.641
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1223.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1347.117 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1227.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1355.602 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 54 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1227.996 ; gain = 120.949
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1355.602 ; gain = 230.148
 INFO: [Common 17-1381] The checkpoint 'C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/synth_1/I2C_Master_Controler_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file I2C_Master_Controler_wrapper_utilization_synth.rpt -pb I2C_Master_Controler_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat May 24 21:41:11 2025...
+INFO: [Common 17-206] Exiting Vivado at Sat May 24 22:39:02 2025...

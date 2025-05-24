@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sat May 24 19:37:23 2025
-| Host         : korchamHoyoun24 running 64-bit major release  (build 9200)
+| Date         : Sat May 24 22:29:53 2025
+| Host         : HYPC running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file top_I2C_Slave_timing_summary_routed.rpt -pb top_I2C_Slave_timing_summary_routed.pb -rpx top_I2C_Slave_timing_summary_routed.rpx -warn_on_violation
 | Design       : top_I2C_Slave
 | Device       : 7a35t-cpg236
