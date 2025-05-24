@@ -7,7 +7,8 @@ module top_I2C_Slave (
     input  logic       scl,
     input  logic       btn,
     output logic [3:0] an,
-    output logic [7:0] seg
+    output logic [7:0] seg,
+    output logic       ready
 );
     logic [7:0] slv_reg0;
     logic [7:0] slv_reg1;
@@ -22,7 +23,8 @@ module top_I2C_Slave (
         .slv_reg0(slv_reg0),
         .slv_reg1(slv_reg1),
         .slv_reg2(slv_reg2),
-        .slv_reg3(slv_reg3)
+        .slv_reg3(slv_reg3),
+        .ready   (ready)
     );
 
     btn_debounce u_btn_debounce (
