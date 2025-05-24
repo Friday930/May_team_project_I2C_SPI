@@ -40,6 +40,15 @@ module I2C_Slave #(
     assign sda   = IO_Sel ? 1'bz : sda_reg;
     assign ready = (state == IDLE);
 
+    logic scl_R,scl_F;
+    logic D1,D2;
+    always_ff @( posedge clk ) begin : edge_detect
+        D1 <= scl;
+        D2 <= D1;
+    end
+    assign scl_R = D1 & ~D2;
+    assign scl_F = ~D1 & ~D2;
+
     always_ff @(posedge clk) begin : state_logic
         if (reset) begin
             slv_reg0   <= 0;
@@ -93,12 +102,12 @@ module I2C_Slave #(
                 end
             end
             START: begin  // sda = 0, scl = 1
-                if (!scl) begin
+                if (scl_F) begin
                     next = DATA_CL0;
                 end
             end
             DATA_CL0: begin  // scl = 0
-                if (scl) begin  // sda = data or stop_sig
+                if (scl_R) begin  // sda = data or stop_sig
                     next = DATA_CL1;
                     temp_data_next = {
                         temp_data[6:0], sda
@@ -111,7 +120,7 @@ module I2C_Slave #(
                     bit_count_next = 0;
                     IO_Sel_next = 1;
                     next = IDLE;
-                end else if (!scl) begin
+                end else if (scl_F) begin
                     if (bit_count == 7) begin  // data_save
                         bit_count_next = 0;
                         next = ACK_CL0;
@@ -145,14 +154,14 @@ module I2C_Slave #(
                 if (slv_sel != SLV_ADDR) begin
                     IO_Sel_next = 1;
                     next = IDLE;
-                end else if (scl) begin
+                end else if (scl_R) begin
                     IO_Sel_next = 0;
                     next = ACK_CL1;
                 end
             end
             ACK_CL1: begin  // scl = 1, sda = slave_out, IO_Moed = Output_mode
                 sda_reg = 0;
-                if (!scl) begin
+                if (scl_F) begin
                     IO_Sel_next = 1;
                     next = DATA_CL0;
                 end
