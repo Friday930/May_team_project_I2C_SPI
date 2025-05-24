@@ -238,6 +238,8 @@ module I2C_Master (
                 end
             end
             DATA_END: begin
+                sda_reg = 0;
+                scl = 0;
                 if (clk_count == 249) begin
                     sda_IO_next = 0;
                     clk_count_next = 0;
@@ -258,13 +260,8 @@ module I2C_Master (
             end
             STOP2: begin
                 scl = 1;
-                if (clk_count == 499) begin
-                    sda_reg = 1;
-                    clk_count_next = 0;
-                    next = IDLE;
-                end else begin
-                    clk_count_next = clk_count + 1;
-                end
+                sda_reg = 1;
+                next = IDLE;
             end
         endcase
     end
