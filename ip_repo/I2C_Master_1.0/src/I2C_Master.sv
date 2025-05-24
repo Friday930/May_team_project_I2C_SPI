@@ -157,7 +157,7 @@ module I2C_Master (
             end
             DATA2: begin
                 sda_reg = temp_tx_data[7];
-                scl = 1;
+                scl = 0;
                 if (clk_count == 249) begin
                     temp_rx_data_next = {temp_rx_data[6:0], sda};
                     clk_count_next = 0;
@@ -181,11 +181,11 @@ module I2C_Master (
                 scl = 0;
                 if (clk_count == 249) begin
                     clk_count_next = 0;
+                    temp_tx_data_next = {temp_tx_data[6:0], 1'b0};
                     if (bit_count == 7) begin
                         bit_count_next = 0;
                         next = ACK1;
                     end else begin
-                        temp_tx_data_next = {temp_tx_data[6:0], 1'b0};
                         bit_count_next = bit_count + 1;
                         next = DATA1;
                     end
@@ -206,7 +206,7 @@ module I2C_Master (
             end
             ACK2: begin  // wait slave ACK; 
                 sda_reg = 0;
-                scl = 1;
+                scl = 0;
                 if (clk_count == 249) begin
                     clk_count_next = 0;
                     next = ACK3;
@@ -238,6 +238,8 @@ module I2C_Master (
                 end
             end
             DATA_END: begin
+                sda_reg = 0;
+                scl = 0;
                 if (clk_count == 249) begin
                     sda_IO_next = 0;
                     clk_count_next = 0;
@@ -258,13 +260,8 @@ module I2C_Master (
             end
             STOP2: begin
                 scl = 1;
-                if (clk_count == 499) begin
-                    sda_reg = 1;
-                    clk_count_next = 0;
-                    next = IDLE;
-                end else begin
-                    clk_count_next = clk_count + 1;
-                end
+                sda_reg = 1;
+                next = IDLE;
             end
         endcase
     end
