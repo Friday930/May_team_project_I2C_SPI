@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sat May 24 17:48:26 2025
+| Date         : Sat May 24 19:37:05 2025
 | Host         : korchamHoyoun24 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_I2C_Slave_control_sets_placed.rpt
 | Design       : top_I2C_Slave
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     9 |
-|    Minimum number of control sets                        |     9 |
+| Total control sets                                       |    10 |
+|    Minimum number of control sets                        |    10 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    20 |
+| Unused register locations in slices containing registers |    21 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,10 +39,10 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     9 |
+| Total control sets |    10 |
 | >= 0 to < 4        |     2 |
 | >= 4 to < 6        |     0 |
-| >= 6 to < 8        |     0 |
+| >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     6 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
@@ -59,11 +59,11 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               1 |            1 |
-| No           | No                    | Yes                    |              49 |           11 |
+| No           | No                    | Yes                    |              49 |           14 |
 | No           | Yes                   | No                     |              10 |            5 |
-| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               7 |            1 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              40 |           16 |
+| Yes          | Yes                   | No                     |              40 |           14 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -75,13 +75,14 @@ Table of Contents
 +--------------------------------+----------------------------+------------------+------------------+----------------+--------------+
 |  clk_IBUF_BUFG                 |                            |                  |                1 |              1 |         1.00 |
 |  u_btn_debounce/q_reg_reg[1]_0 |                            | reset_IBUF       |                1 |              2 |         2.00 |
-|  u_btn_debounce/r_1khz         |                            | reset_IBUF       |                1 |              8 |         8.00 |
-|  clk_IBUF_BUFG                 | u_I2C_Slave/slv_reg0_next  | reset_IBUF       |                4 |              8 |         2.00 |
-|  clk_IBUF_BUFG                 | u_I2C_Slave/slv_reg3_next  | reset_IBUF       |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                 | u_I2C_Slave/slv_sel_next   |                  |                1 |              7 |         7.00 |
+|  u_btn_debounce/r_1khz         |                            | reset_IBUF       |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                 | u_I2C_Slave/slv_reg0_next  | reset_IBUF       |                3 |              8 |         2.67 |
 |  clk_IBUF_BUFG                 | u_I2C_Slave/slv_reg1_next  | reset_IBUF       |                3 |              8 |         2.67 |
-|  clk_IBUF_BUFG                 | u_I2C_Slave/temp_data_next | reset_IBUF       |                2 |              8 |         4.00 |
-|  clk_IBUF_BUFG                 | u_I2C_Slave/slv_reg2_next  | reset_IBUF       |                4 |              8 |         2.00 |
-|  clk_IBUF_BUFG                 |                            | reset_IBUF       |               14 |             49 |         3.50 |
+|  clk_IBUF_BUFG                 | u_I2C_Slave/temp_data_next | reset_IBUF       |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                 | u_I2C_Slave/slv_reg3_next  | reset_IBUF       |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                 | u_I2C_Slave/slv_reg2_next  | reset_IBUF       |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                 |                            | reset_IBUF       |               15 |             49 |         3.27 |
 +--------------------------------+----------------------------+------------------+------------------+----------------+--------------+
 
 

@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Fri May 23 15:34:37 2025
+// Date        : Fri May 23 15:34:36 2025
 // Host        : korchamHoyoun24 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_mdm_1_0/I2C_Master_Controler_mdm_1_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top I2C_Master_Controler_mdm_1_0 -prefix
+//               I2C_Master_Controler_mdm_1_0_ I2C_Master_Controler_mdm_1_0_sim_netlist.v
 // Design      : I2C_Master_Controler_mdm_1_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -2486,7 +2486,6 @@ module I2C_Master_Controler_mdm_1_0
         .bscan_ext_update(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "JTAG_CONTROL" *) 
 module I2C_Master_Controler_mdm_1_0_JTAG_CONTROL
    (\shift_Count_reg[0]_0 ,
     Debug_SYS_Rst,
@@ -3667,7 +3666,6 @@ module I2C_Master_Controler_mdm_1_0_JTAG_CONTROL
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "MB_BSCANE2" *) 
 module I2C_Master_Controler_mdm_1_0_MB_BSCANE2
    (\Use_BSCAN.PORT_Selector_reg[0] ,
     DRCK,
@@ -3810,7 +3808,6 @@ module I2C_Master_Controler_mdm_1_0_MB_BSCANE2
         .O(\shift_Count_reg[0] ));
 endmodule
 
-(* ORIG_REF_NAME = "MB_BUFG" *) 
 module I2C_Master_Controler_mdm_1_0_MB_BUFG
    (Dbg_Clk_0,
     DRCK);
@@ -3826,7 +3823,6 @@ module I2C_Master_Controler_mdm_1_0_MB_BUFG
         .O(Dbg_Clk_0));
 endmodule
 
-(* ORIG_REF_NAME = "MB_FDC_1" *) 
 module I2C_Master_Controler_mdm_1_0_MB_FDC_1
    (D,
     Dbg_Reg_En_0,
@@ -4433,7 +4429,6 @@ module I2C_Master_Controler_mdm_1_0_MB_FDC_1
         .O(\tdi_shifter_reg[0]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "MB_FDRE_1" *) 
 module I2C_Master_Controler_mdm_1_0_MB_FDRE_1
    (sync,
     Dbg_Shift_0,
@@ -4490,7 +4485,6 @@ module I2C_Master_Controler_mdm_1_0_MB_FDRE_1
         .R(D));
 endmodule
 
-(* ORIG_REF_NAME = "MB_LUT1" *) 
 module I2C_Master_Controler_mdm_1_0_MB_LUT1
    (Ext_JTAG_TDI,
     I0);
@@ -4509,7 +4503,6 @@ module I2C_Master_Controler_mdm_1_0_MB_LUT1
         .O(lut1_o));
 endmodule
 
-(* ORIG_REF_NAME = "MB_SRL16E" *) 
 module I2C_Master_Controler_mdm_1_0_MB_SRL16E
    (tdo,
     \Use_E2.BSCANE2_I_i_8_0 ,
@@ -4767,7 +4760,7 @@ endmodule
 (* C_TRACE_CLK_OUT_PHASE = "90" *) (* C_TRACE_DATA_WIDTH = "32" *) (* C_TRACE_ID = "110" *) 
 (* C_TRACE_OUTPUT = "0" *) (* C_TRACE_PROTOCOL = "1" *) (* C_USE_BSCAN = "0" *) 
 (* C_USE_CONFIG_RESET = "0" *) (* C_USE_CROSS_TRIGGER = "0" *) (* C_USE_UART = "0" *) 
-(* ORIG_REF_NAME = "MDM" *) (* bscan_debug_core = "FALSE" *) (* dont_touch = "false" *) 
+(* bscan_debug_core = "FALSE" *) (* dont_touch = "false" *) 
 module I2C_Master_Controler_mdm_1_0_MDM
    (Config_Reset,
     Scan_Reset_Sel,
@@ -13518,7 +13511,6 @@ module I2C_Master_Controler_mdm_1_0_MDM
         .I0(TDI));
 endmodule
 
-(* ORIG_REF_NAME = "MDM_Core" *) 
 module I2C_Master_Controler_mdm_1_0_MDM_Core
    (\shift_Count_reg[0] ,
     Debug_SYS_Rst,

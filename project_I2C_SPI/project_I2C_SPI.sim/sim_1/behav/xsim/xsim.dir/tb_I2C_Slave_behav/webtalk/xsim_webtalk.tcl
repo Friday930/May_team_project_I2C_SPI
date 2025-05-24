@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.sim/sim_1/behav/xsim/xsim.dir/tb_I2C_Slave_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Sat May 24 17:45:01 2025" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Sat May 24 21:31:13 2025" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2020.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "3064766" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "75af1de4-03da-4a66-ad47-61cdf71941e0" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "a1de2a1f27844c16a13a6f51e91fbe0f" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "7" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "11" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "12th Gen Intel(R) Core(TM) i7-1260P" -context "user_environment"
@@ -26,7 +26,7 @@ webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
 webtalk_add_data -client xsim -key runtime -value "0 ps" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.05_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "8300_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 1398025580 -regid "" -xml C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.sim/sim_1/behav/xsim/xsim.dir/tb_I2C_Slave_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.sim/sim_1/behav/xsim/xsim.dir/tb_I2C_Slave_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.sim/sim_1/behav/xsim/xsim.dir/tb_I2C_Slave_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.06_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "8308_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 493851981 -regid "" -xml C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.sim/sim_1/behav/xsim/xsim.dir/tb_I2C_Slave_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.sim/sim_1/behav/xsim/xsim.dir/tb_I2C_Slave_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.sim/sim_1/behav/xsim/xsim.dir/tb_I2C_Slave_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

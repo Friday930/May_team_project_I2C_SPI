@@ -116,8 +116,6 @@ OPTRACE "impl_1" END { }
 }
 
 set_msg_config -id {HDL-1065} -limit 10000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -126,7 +124,6 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
-  set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
   set_property board_part_repo_paths {C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store} [current_project]
@@ -138,8 +135,8 @@ OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.cache/wt [current_project]
   set_property parent.project_path C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.xpr [current_project]
   set_property ip_repo_paths {
-  c:/harman/May_team_project_I2C_SPI/ip_repo/myip_1.0
-  c:/harman/May_team_project_I2C_SPI/ip_repo
+  C:/harman/May_team_project_I2C_SPI/ip_repo/myip_1.0
+  C:/harman/May_team_project_I2C_SPI/ip_repo
 } [current_project]
   update_ip_catalog
   set_property ip_output_repo C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.cache/ip [current_project]

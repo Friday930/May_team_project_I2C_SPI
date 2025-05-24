@@ -71,10 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
-set_param xicom.use_bs_reader 1
 set_msg_config -id {HDL-1065} -limit 10000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -98,7 +95,7 @@ set_property ip_output_repo c:/harman/May_team_project_I2C_SPI/project_i2C_micro
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/hdl/I2C_Master_Controler_wrapper.v
+read_verilog -library xil_defaultlib C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/hdl/I2C_Master_Controler_wrapper.v
 add_files C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.srcs/sources_1/bd/I2C_Master_Controler/I2C_Master_Controler.bd
 set_property used_in_implementation false [get_files -all c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_microblaze_0_0/I2C_Master_Controler_microblaze_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_microblaze_0_0/I2C_Master_Controler_microblaze_0_0_ooc_debug.xdc]

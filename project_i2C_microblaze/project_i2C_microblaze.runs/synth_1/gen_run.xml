@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1747988732">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1748090419">
   <File Type="PA-TCL" Name="I2C_Master_Controler_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="I2C_Master_Controler_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="I2C_Master_Controler_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="I2C_Master_Controler_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="I2C_Master_Controler_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="I2C_Master_Controler_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="I2C_Master_Controler_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="I2C_Master_Controler_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="I2C_Master_Controler_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/I2C_Master_Controler/I2C_Master_Controler.bd">
@@ -52,16 +55,5 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_dlmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_clk_wiz_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_microblaze_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_dlmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_mdm_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_ilmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_ilmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_lmb_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_axi_uartlite_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_I2C_Master_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_I2C_Master_0_3"/>
 </GenRun>
