@@ -1,11 +1,11 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Sun May 25 01:51:10 2025
+// Date        : Sun May 25 02:39:21 2025
 // Host        : HYPC running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
-//               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ I2C_Master_Controler_I2C_Master_0_6_stub.v
-// Design      : I2C_Master_Controler_I2C_Master_0_6
+// Command     : write_verilog -force -mode synth_stub
+//               c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_I2C_Master_0_7/I2C_Master_Controler_I2C_Master_0_7_stub.v
+// Design      : I2C_Master_Controler_I2C_Master_0_7
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcpg236-1
 // --------------------------------------------------------------------------------
@@ -14,7 +14,7 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* X_CORE_INFO = "I2C_Master_v1_0,Vivado 2020.2" *)
-module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix(sda, scl, ready, s00_axi_aclk, s00_axi_aresetn, 
+module I2C_Master_Controler_I2C_Master_0_7(sda, scl, ready, s00_axi_aclk, s00_axi_aresetn, 
   s00_axi_awaddr, s00_axi_awprot, s00_axi_awvalid, s00_axi_awready, s00_axi_wdata, 
   s00_axi_wstrb, s00_axi_wvalid, s00_axi_wready, s00_axi_bresp, s00_axi_bvalid, 
   s00_axi_bready, s00_axi_araddr, s00_axi_arprot, s00_axi_arvalid, s00_axi_arready, 

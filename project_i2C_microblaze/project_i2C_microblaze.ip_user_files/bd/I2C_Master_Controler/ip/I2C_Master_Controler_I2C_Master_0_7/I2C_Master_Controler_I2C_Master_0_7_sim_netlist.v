@@ -1,18 +1,122 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Sun May 25 01:51:10 2025
+// Date        : Sun May 25 02:39:21 2025
 // Host        : HYPC running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
-//               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ I2C_Master_Controler_I2C_Master_0_6_sim_netlist.v
-// Design      : I2C_Master_Controler_I2C_Master_0_6
+// Command     : write_verilog -force -mode funcsim
+//               c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_I2C_Master_0_7/I2C_Master_Controler_I2C_Master_0_7_sim_netlist.v
+// Design      : I2C_Master_Controler_I2C_Master_0_7
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7a35tcpg236-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master
+(* CHECK_LICENSE_TYPE = "I2C_Master_Controler_I2C_Master_0_7,I2C_Master_v1_0,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "I2C_Master_v1_0,Vivado 2020.2" *) 
+(* NotValidForBitStream *)
+module I2C_Master_Controler_I2C_Master_0_7
+   (sda,
+    scl,
+    ready,
+    s00_axi_aclk,
+    s00_axi_aresetn,
+    s00_axi_awaddr,
+    s00_axi_awprot,
+    s00_axi_awvalid,
+    s00_axi_awready,
+    s00_axi_wdata,
+    s00_axi_wstrb,
+    s00_axi_wvalid,
+    s00_axi_wready,
+    s00_axi_bresp,
+    s00_axi_bvalid,
+    s00_axi_bready,
+    s00_axi_araddr,
+    s00_axi_arprot,
+    s00_axi_arvalid,
+    s00_axi_arready,
+    s00_axi_rdata,
+    s00_axi_rresp,
+    s00_axi_rvalid,
+    s00_axi_rready);
+  inout sda;
+  output scl;
+  output ready;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, INSERT_VIP 0" *) input s00_axi_aclk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 S00_AXI_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s00_axi_aresetn;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *) input [3:0]s00_axi_awaddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWPROT" *) input [2:0]s00_axi_awprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWVALID" *) input s00_axi_awvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWREADY" *) output s00_axi_awready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WDATA" *) input [31:0]s00_axi_wdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WSTRB" *) input [3:0]s00_axi_wstrb;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WVALID" *) input s00_axi_wvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WREADY" *) output s00_axi_wready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI BRESP" *) output [1:0]s00_axi_bresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI BVALID" *) output s00_axi_bvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI BREADY" *) input s00_axi_bready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARADDR" *) input [3:0]s00_axi_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARPROT" *) input [2:0]s00_axi_arprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARVALID" *) input s00_axi_arvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARREADY" *) output s00_axi_arready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RDATA" *) output [31:0]s00_axi_rdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RRESP" *) output [1:0]s00_axi_rresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RVALID" *) output s00_axi_rvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s00_axi_rready;
+
+  wire \<const0> ;
+  wire ready;
+  wire s00_axi_aclk;
+  wire [3:0]s00_axi_araddr;
+  wire s00_axi_aresetn;
+  wire s00_axi_arready;
+  wire s00_axi_arvalid;
+  wire [3:0]s00_axi_awaddr;
+  wire s00_axi_awready;
+  wire s00_axi_awvalid;
+  wire s00_axi_bready;
+  wire s00_axi_bvalid;
+  wire [31:0]s00_axi_rdata;
+  wire s00_axi_rready;
+  wire s00_axi_rvalid;
+  wire [31:0]s00_axi_wdata;
+  wire s00_axi_wready;
+  wire [3:0]s00_axi_wstrb;
+  wire s00_axi_wvalid;
+  wire scl;
+  wire sda;
+
+  assign s00_axi_bresp[1] = \<const0> ;
+  assign s00_axi_bresp[0] = \<const0> ;
+  assign s00_axi_rresp[1] = \<const0> ;
+  assign s00_axi_rresp[0] = \<const0> ;
+  GND GND
+       (.G(\<const0> ));
+  I2C_Master_Controler_I2C_Master_0_7_I2C_Master_v1_0 inst
+       (.ready(ready),
+        .s00_axi_aclk(s00_axi_aclk),
+        .s00_axi_araddr(s00_axi_araddr[3:2]),
+        .s00_axi_aresetn(s00_axi_aresetn),
+        .s00_axi_arready(s00_axi_arready),
+        .s00_axi_arvalid(s00_axi_arvalid),
+        .s00_axi_awaddr(s00_axi_awaddr[3:2]),
+        .s00_axi_awready(s00_axi_awready),
+        .s00_axi_awvalid(s00_axi_awvalid),
+        .s00_axi_bready(s00_axi_bready),
+        .s00_axi_bvalid(s00_axi_bvalid),
+        .s00_axi_rdata(s00_axi_rdata),
+        .s00_axi_rready(s00_axi_rready),
+        .s00_axi_rvalid(s00_axi_rvalid),
+        .s00_axi_wdata(s00_axi_wdata),
+        .s00_axi_wready(s00_axi_wready),
+        .s00_axi_wstrb(s00_axi_wstrb),
+        .s00_axi_wvalid(s00_axi_wvalid),
+        .scl(scl),
+        .sda(sda));
+endmodule
+
+(* ORIG_REF_NAME = "I2C_Master" *) 
+module I2C_Master_Controler_I2C_Master_0_7_I2C_Master
    (master_mode,
     Q,
     \state_reg[2]_0 ,
@@ -21,16 +125,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master
     ready,
     \state_reg[1]_0 ,
     scl,
-    \state_reg[0]_1 ,
-    \state_reg[0]_2 ,
+    \state_reg[3]_0 ,
+    \state_reg[3]_1 ,
     \temp_rx_data_reg[7]_0 ,
     sda,
     master_mode_reg_0,
     s00_axi_aclk,
     AR,
+    \state_reg[3]_2 ,
+    \state_reg[0]_1 ,
     sda_IO_reg_0,
-    \state_reg[0]_3 ,
-    \state_reg[0]_4 ,
     axi_araddr,
     D,
     \temp_tx_data_reg[7]_0 );
@@ -42,16 +146,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master
   output ready;
   output \state_reg[1]_0 ;
   output scl;
-  output \state_reg[0]_1 ;
-  output \state_reg[0]_2 ;
+  output \state_reg[3]_0 ;
+  output \state_reg[3]_1 ;
   output [7:0]\temp_rx_data_reg[7]_0 ;
   inout sda;
   input master_mode_reg_0;
   input s00_axi_aclk;
   input [0:0]AR;
-  input [3:0]sda_IO_reg_0;
-  input \state_reg[0]_3 ;
-  input \state_reg[0]_4 ;
+  input [3:0]\state_reg[3]_2 ;
+  input \state_reg[0]_1 ;
+  input sda_IO_reg_0;
   input [1:0]axi_araddr;
   input [0:0]D;
   input [6:0]\temp_tx_data_reg[7]_0 ;
@@ -61,6 +165,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master
   wire [2:0]Q;
   wire [1:0]axi_araddr;
   wire \axi_araddr_reg[2] ;
+  wire \axi_rdata[1]_i_3_n_0 ;
   wire [7:0]bit_count;
   wire \bit_count[4]_i_2_n_0 ;
   wire \bit_count[7]_i_1_n_0 ;
@@ -91,13 +196,14 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master
   wire sda_IO_i_3_n_0;
   wire sda_IO_i_4_n_0;
   wire sda_IO_i_5_n_0;
-  wire [3:0]sda_IO_reg_0;
+  wire sda_IO_i_6_n_0;
+  wire sda_IO_reg_0;
   wire sda_reg;
   wire [2:2]state;
   wire \state[0]_i_1_n_0 ;
   wire \state[0]_i_2_n_0 ;
   wire \state[0]_i_3_n_0 ;
-  wire \state[0]_i_5_n_0 ;
+  wire \state[0]_i_4_n_0 ;
   wire \state[1]_i_1_n_0 ;
   wire \state[1]_i_2_n_0 ;
   wire \state[2]_i_1_n_0 ;
@@ -114,11 +220,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master
   wire \state[3]_i_9_n_0 ;
   wire \state_reg[0]_0 ;
   wire \state_reg[0]_1 ;
-  wire \state_reg[0]_2 ;
-  wire \state_reg[0]_3 ;
-  wire \state_reg[0]_4 ;
   wire \state_reg[1]_0 ;
   wire \state_reg[2]_0 ;
+  wire \state_reg[3]_0 ;
+  wire \state_reg[3]_1 ;
+  wire [3:0]\state_reg[3]_2 ;
   wire \temp_rx_data[7]_i_1_n_0 ;
   wire [7:0]\temp_rx_data_reg[7]_0 ;
   wire \temp_tx_data[7]_i_1_n_0 ;
@@ -135,23 +241,30 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master
   LUT6 #(
     .INIT(64'h0400000000000000)) 
     \axi_rdata[0]_i_2 
-       (.I0(Q[0]),
+       (.I0(\axi_rdata[1]_i_3_n_0 ),
         .I1(Q[2]),
-        .I2(sda_IO_i_4_n_0),
+        .I2(Q[0]),
         .I3(axi_araddr[0]),
         .I4(axi_araddr[1]),
         .I5(master_mode),
-        .O(\state_reg[0]_1 ));
+        .O(\state_reg[3]_0 ));
   LUT6 #(
     .INIT(64'h0000000004000000)) 
     \axi_rdata[1]_i_2 
-       (.I0(Q[0]),
+       (.I0(\axi_rdata[1]_i_3_n_0 ),
         .I1(Q[2]),
-        .I2(sda_IO_i_4_n_0),
+        .I2(Q[0]),
         .I3(axi_araddr[0]),
         .I4(axi_araddr[1]),
         .I5(master_mode),
-        .O(\state_reg[0]_2 ));
+        .O(\state_reg[3]_1 ));
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  LUT2 #(
+    .INIT(4'h7)) 
+    \axi_rdata[1]_i_3 
+       (.I0(Q[1]),
+        .I1(state),
+        .O(\axi_rdata[1]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'h0000000000008008)) 
     \axi_rdata[2]_i_2 
@@ -389,7 +502,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master
         .I3(\clk_count[9]_i_4_n_0 ),
         .I4(\clk_count[6]_i_3_n_0 ),
         .O(clk_count_next[6]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT3 #(
     .INIT(8'hFE)) 
     \clk_count[6]_i_2 
@@ -563,14 +676,14 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master
         .I2(Q[1]),
         .I3(Q[0]),
         .O(ready));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT4 #(
-    .INIT(16'h4475)) 
+    .INIT(16'h04FF)) 
     scl_INST_0
-       (.I0(Q[1]),
-        .I1(Q[0]),
-        .I2(state),
-        .I3(Q[2]),
+       (.I0(Q[0]),
+        .I1(state),
+        .I2(Q[2]),
+        .I3(Q[1]),
         .O(scl));
   LUT2 #(
     .INIT(4'h8)) 
@@ -594,49 +707,61 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master
        (.I0(sda_IO),
         .O(sda_INST_0_i_2_n_0));
   LUT6 #(
-    .INIT(64'hBAAABBBB8AAA8888)) 
+    .INIT(64'hAAAAAAABAAAAAAA8)) 
     sda_IO_i_1
        (.I0(sda_IO0),
         .I1(sda_IO_i_3_n_0),
         .I2(sda_IO_i_4_n_0),
         .I3(sda_IO_i_5_n_0),
-        .I4(\bit_count[7]_i_3_n_0 ),
+        .I4(sda_IO_reg_0),
         .I5(sda_IO),
         .O(sda_IO_i_1_n_0));
   (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT5 #(
-    .INIT(32'h0000F010)) 
+    .INIT(32'h0000AB00)) 
     sda_IO_i_2
-       (.I0(sda_IO_reg_0[1]),
-        .I1(sda_IO_reg_0[0]),
-        .I2(Q[0]),
-        .I3(Q[2]),
+       (.I0(Q[2]),
+        .I1(\state_reg[3]_2 [0]),
+        .I2(\state_reg[3]_2 [1]),
+        .I3(Q[0]),
         .I4(state),
         .O(sda_IO0));
-  LUT6 #(
-    .INIT(64'h0101010101090901)) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  LUT4 #(
+    .INIT(16'h0001)) 
     sda_IO_i_3
        (.I0(Q[1]),
         .I1(Q[0]),
-        .I2(\state_reg[2]_0 ),
-        .I3(sda_IO_reg_0[2]),
-        .I4(sda_IO_reg_0[1]),
-        .I5(sda_IO_reg_0[3]),
+        .I2(Q[2]),
+        .I3(state),
         .O(sda_IO_i_3_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
-  LUT2 #(
-    .INIT(4'h7)) 
+  LUT6 #(
+    .INIT(64'h0000000000000008)) 
     sda_IO_i_4
-       (.I0(Q[1]),
-        .I1(state),
+       (.I0(Q[2]),
+        .I1(\state[3]_i_9_n_0 ),
+        .I2(\clk_count[9]_i_5_n_0 ),
+        .I3(clk_count[2]),
+        .I4(clk_count[9]),
+        .I5(sda_IO_i_6_n_0),
         .O(sda_IO_i_4_n_0));
+  LUT6 #(
+    .INIT(64'h0000000000000008)) 
+    sda_IO_i_5
+       (.I0(Q[2]),
+        .I1(\state[3]_i_9_n_0 ),
+        .I2(\clk_count[9]_i_5_n_0 ),
+        .I3(clk_count[2]),
+        .I4(clk_count[9]),
+        .I5(\axi_rdata[1]_i_3_n_0 ),
+        .O(sda_IO_i_5_n_0));
   (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT2 #(
     .INIT(4'h7)) 
-    sda_IO_i_5
+    sda_IO_i_6
        (.I0(Q[0]),
         .I1(Q[1]),
-        .O(sda_IO_i_5_n_0));
+        .O(sda_IO_i_6_n_0));
   FDCE sda_IO_reg
        (.C(s00_axi_aclk),
         .CE(1'b1),
@@ -644,47 +769,47 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master
         .D(sda_IO_i_1_n_0),
         .Q(sda_IO));
   LUT6 #(
-    .INIT(64'hFFFFFFFEFFEEFFEE)) 
+    .INIT(64'hFFFFFFFEFEFEFEFE)) 
     \state[0]_i_1 
        (.I0(\state[0]_i_2_n_0 ),
         .I1(\state[0]_i_3_n_0 ),
-        .I2(\state_reg[2]_0 ),
-        .I3(\state[0]_i_5_n_0 ),
-        .I4(sda_IO_reg_0[0]),
+        .I2(\state[0]_i_4_n_0 ),
+        .I3(\state_reg[2]_0 ),
+        .I4(\state_reg[3]_2 [0]),
         .I5(\state_reg[0]_0 ),
         .O(\state[0]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'hAA0000000000CF00)) 
-    \state[0]_i_2 
-       (.I0(Q[0]),
-        .I1(sda_IO_reg_0[0]),
-        .I2(sda_IO_reg_0[1]),
-        .I3(Q[1]),
-        .I4(Q[2]),
-        .I5(state),
-        .O(\state[0]_i_2_n_0 ));
-  LUT3 #(
-    .INIT(8'h04)) 
-    \state[0]_i_3 
-       (.I0(Q[0]),
-        .I1(Q[2]),
-        .I2(sda),
-        .O(\state[0]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
-  LUT2 #(
-    .INIT(4'hE)) 
-    \state[0]_i_4 
-       (.I0(state),
-        .I1(Q[2]),
-        .O(\state_reg[2]_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT3 #(
     .INIT(8'h02)) 
-    \state[0]_i_5 
+    \state[0]_i_2 
        (.I0(Q[1]),
         .I1(state),
         .I2(Q[0]),
-        .O(\state[0]_i_5_n_0 ));
+        .O(\state[0]_i_2_n_0 ));
+  LUT3 #(
+    .INIT(8'h02)) 
+    \state[0]_i_3 
+       (.I0(Q[2]),
+        .I1(Q[0]),
+        .I2(sda),
+        .O(\state[0]_i_3_n_0 ));
+  LUT6 #(
+    .INIT(64'hAA0000000000CF00)) 
+    \state[0]_i_4 
+       (.I0(Q[0]),
+        .I1(\state_reg[3]_2 [0]),
+        .I2(\state_reg[3]_2 [1]),
+        .I3(Q[1]),
+        .I4(Q[2]),
+        .I5(state),
+        .O(\state[0]_i_4_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT2 #(
+    .INIT(4'hE)) 
+    \state[0]_i_5 
+       (.I0(state),
+        .I1(Q[2]),
+        .O(\state_reg[2]_0 ));
   (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT2 #(
     .INIT(4'h1)) 
@@ -693,21 +818,21 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master
         .I1(Q[1]),
         .O(\state_reg[0]_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFF9282B0B0)) 
+    .INIT(64'hFFFFFFFF83A183A0)) 
     \state[1]_i_1 
        (.I0(Q[2]),
         .I1(state),
         .I2(Q[0]),
-        .I3(sda_IO_reg_0[2]),
-        .I4(Q[1]),
+        .I3(Q[1]),
+        .I4(\state_reg[3]_2 [1]),
         .I5(\state[1]_i_2_n_0 ),
         .O(\state[1]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'h2222000000550050)) 
+    .INIT(64'h2222000050005500)) 
     \state[1]_i_2 
        (.I0(Q[2]),
         .I1(sda),
-        .I2(sda_IO_reg_0[1]),
+        .I2(\state_reg[3]_2 [2]),
         .I3(Q[0]),
         .I4(Q[1]),
         .I5(state),
@@ -726,8 +851,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master
     .INIT(64'hFFFFFFFF150000AA)) 
     \state[2]_i_2 
        (.I0(state),
-        .I1(sda_IO_reg_0[0]),
-        .I2(sda_IO_reg_0[1]),
+        .I1(\state_reg[3]_2 [0]),
+        .I2(\state_reg[3]_2 [1]),
         .I3(Q[1]),
         .I4(Q[0]),
         .I5(\state[2]_i_3_n_0 ),
@@ -739,26 +864,27 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master
        (.I0(state),
         .I1(Q[0]),
         .I2(Q[1]),
-        .I3(sda_IO_reg_0[2]),
+        .I3(\state_reg[3]_2 [2]),
         .I4(Q[2]),
         .O(\state[2]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFFBA)) 
     \state[3]_i_1 
-       (.I0(\state_reg[0]_3 ),
+       (.I0(\state_reg[0]_1 ),
         .I1(\clk_count[6]_i_2_n_0 ),
         .I2(\state[3]_i_4_n_0 ),
         .I3(\bit_count[7]_i_3_n_0 ),
-        .I4(\state_reg[0]_4 ),
+        .I4(sda_IO_reg_0),
         .I5(\state[3]_i_6_n_0 ),
         .O(\state[3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \state[3]_i_10 
        (.I0(clk_count[2]),
         .I1(clk_count[9]),
         .O(\state[3]_i_10_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT2 #(
     .INIT(4'h1)) 
     \state[3]_i_11 
@@ -799,7 +925,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master
     \state[3]_i_7 
        (.I0(Q[0]),
         .I1(sda),
-        .I2(sda_IO_reg_0[3]),
+        .I2(\state_reg[3]_2 [3]),
         .I3(Q[1]),
         .I4(state),
         .O(\state[3]_i_7_n_0 ));
@@ -1014,110 +1140,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master
         .Q(p_0_in));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "I2C_Master_Controler_I2C_Master_0_6,I2C_Master_v1_0,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "I2C_Master_v1_0,Vivado 2020.2" *) 
-(* NotValidForBitStream *)
-module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
-   (sda,
-    scl,
-    ready,
-    s00_axi_aclk,
-    s00_axi_aresetn,
-    s00_axi_awaddr,
-    s00_axi_awprot,
-    s00_axi_awvalid,
-    s00_axi_awready,
-    s00_axi_wdata,
-    s00_axi_wstrb,
-    s00_axi_wvalid,
-    s00_axi_wready,
-    s00_axi_bresp,
-    s00_axi_bvalid,
-    s00_axi_bready,
-    s00_axi_araddr,
-    s00_axi_arprot,
-    s00_axi_arvalid,
-    s00_axi_arready,
-    s00_axi_rdata,
-    s00_axi_rresp,
-    s00_axi_rvalid,
-    s00_axi_rready);
-  inout sda;
-  output scl;
-  output ready;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, INSERT_VIP 0" *) input s00_axi_aclk;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 S00_AXI_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s00_axi_aresetn;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *) input [3:0]s00_axi_awaddr;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWPROT" *) input [2:0]s00_axi_awprot;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWVALID" *) input s00_axi_awvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWREADY" *) output s00_axi_awready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WDATA" *) input [31:0]s00_axi_wdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WSTRB" *) input [3:0]s00_axi_wstrb;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WVALID" *) input s00_axi_wvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WREADY" *) output s00_axi_wready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI BRESP" *) output [1:0]s00_axi_bresp;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI BVALID" *) output s00_axi_bvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI BREADY" *) input s00_axi_bready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARADDR" *) input [3:0]s00_axi_araddr;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARPROT" *) input [2:0]s00_axi_arprot;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARVALID" *) input s00_axi_arvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARREADY" *) output s00_axi_arready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RDATA" *) output [31:0]s00_axi_rdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RRESP" *) output [1:0]s00_axi_rresp;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RVALID" *) output s00_axi_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s00_axi_rready;
-
-  wire \<const0> ;
-  wire ready;
-  wire s00_axi_aclk;
-  wire [3:0]s00_axi_araddr;
-  wire s00_axi_aresetn;
-  wire s00_axi_arready;
-  wire s00_axi_arvalid;
-  wire [3:0]s00_axi_awaddr;
-  wire s00_axi_awready;
-  wire s00_axi_awvalid;
-  wire s00_axi_bready;
-  wire s00_axi_bvalid;
-  wire [31:0]s00_axi_rdata;
-  wire s00_axi_rready;
-  wire s00_axi_rvalid;
-  wire [31:0]s00_axi_wdata;
-  wire s00_axi_wready;
-  wire [3:0]s00_axi_wstrb;
-  wire s00_axi_wvalid;
-  wire scl;
-  wire sda;
-
-  assign s00_axi_bresp[1] = \<const0> ;
-  assign s00_axi_bresp[0] = \<const0> ;
-  assign s00_axi_rresp[1] = \<const0> ;
-  assign s00_axi_rresp[0] = \<const0> ;
-  GND GND
-       (.G(\<const0> ));
-  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master_v1_0 inst
-       (.ready(ready),
-        .s00_axi_aclk(s00_axi_aclk),
-        .s00_axi_araddr(s00_axi_araddr[3:2]),
-        .s00_axi_aresetn(s00_axi_aresetn),
-        .s00_axi_arready(s00_axi_arready),
-        .s00_axi_arvalid(s00_axi_arvalid),
-        .s00_axi_awaddr(s00_axi_awaddr[3:2]),
-        .s00_axi_awready(s00_axi_awready),
-        .s00_axi_awvalid(s00_axi_awvalid),
-        .s00_axi_bready(s00_axi_bready),
-        .s00_axi_bvalid(s00_axi_bvalid),
-        .s00_axi_rdata(s00_axi_rdata),
-        .s00_axi_rready(s00_axi_rready),
-        .s00_axi_rvalid(s00_axi_rvalid),
-        .s00_axi_wdata(s00_axi_wdata),
-        .s00_axi_wready(s00_axi_wready),
-        .s00_axi_wstrb(s00_axi_wstrb),
-        .s00_axi_wvalid(s00_axi_wvalid),
-        .scl(scl),
-        .sda(sda));
-endmodule
-
-module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master_v1_0
+(* ORIG_REF_NAME = "I2C_Master_v1_0" *) 
+module I2C_Master_Controler_I2C_Master_0_7_I2C_Master_v1_0
    (s00_axi_awready,
     s00_axi_wready,
     s00_axi_arready,
@@ -1197,7 +1221,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master_v1_0
   wire u_I2C_Master_n_6;
   wire u_I2C_Master_n_8;
 
-  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master_v1_0_S00_AXI I2C_Master_v1_0_S00_AXI_inst
+  I2C_Master_Controler_I2C_Master_0_7_I2C_Master_v1_0_S00_AXI I2C_Master_v1_0_S00_AXI_inst
        (.AR(reset0),
         .D(temp_tx_data_next),
         .Q(temp_rx_data),
@@ -1232,7 +1256,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master_v1_0
         .\state_reg[0] (u_I2C_Master_n_4),
         .\state_reg[0]_0 (u_I2C_Master_n_5),
         .\temp_tx_data_reg[0] ({state[3],state[1:0]}));
-  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master u_I2C_Master
+  I2C_Master_Controler_I2C_Master_0_7_I2C_Master u_I2C_Master
        (.AR(reset0),
         .D(temp_tx_data_next),
         .Q({state[3],state[1:0]}),
@@ -1244,19 +1268,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master_v1_0
         .s00_axi_aclk(s00_axi_aclk),
         .scl(scl),
         .sda(sda),
-        .sda_IO_reg_0(CMD),
+        .sda_IO_reg_0(I2C_Master_v1_0_S00_AXI_inst_n_20),
         .\state_reg[0]_0 (u_I2C_Master_n_5),
-        .\state_reg[0]_1 (u_I2C_Master_n_10),
-        .\state_reg[0]_2 (u_I2C_Master_n_11),
-        .\state_reg[0]_3 (I2C_Master_v1_0_S00_AXI_inst_n_19),
-        .\state_reg[0]_4 (I2C_Master_v1_0_S00_AXI_inst_n_20),
+        .\state_reg[0]_1 (I2C_Master_v1_0_S00_AXI_inst_n_19),
         .\state_reg[1]_0 (u_I2C_Master_n_8),
         .\state_reg[2]_0 (u_I2C_Master_n_4),
+        .\state_reg[3]_0 (u_I2C_Master_n_10),
+        .\state_reg[3]_1 (u_I2C_Master_n_11),
+        .\state_reg[3]_2 (CMD),
         .\temp_rx_data_reg[7]_0 (temp_rx_data),
         .\temp_tx_data_reg[7]_0 (slv_reg1));
 endmodule
 
-module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_I2C_Master_v1_0_S00_AXI
+(* ORIG_REF_NAME = "I2C_Master_v1_0_S00_AXI" *) 
+module I2C_Master_Controler_I2C_Master_0_7_I2C_Master_v1_0_S00_AXI
    (s00_axi_awready,
     AR,
     s00_axi_wready,

@@ -631,6 +631,12 @@
           }
         },
         "interface_nets": {
+          "xbar_to_m01_couplers": {
+            "interface_ports": [
+              "xbar/M01_AXI",
+              "m01_couplers/S_AXI"
+            ]
+          },
           "microblaze_0_axi_periph_to_s00_couplers": {
             "interface_ports": [
               "S00_AXI",
@@ -659,12 +665,6 @@
             "interface_ports": [
               "M01_AXI",
               "m01_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m01_couplers": {
-            "interface_ports": [
-              "xbar/M01_AXI",
-              "m01_couplers/S_AXI"
             ]
           }
         },
@@ -711,8 +711,8 @@
       },
       "I2C_Master_0": {
         "vlnv": "xilinx.com:user:I2C_Master:1.0",
-        "xci_name": "I2C_Master_Controler_I2C_Master_0_6",
-        "xci_path": "ip\\I2C_Master_Controler_I2C_Master_0_6\\I2C_Master_Controler_I2C_Master_0_6.xci",
+        "xci_name": "I2C_Master_Controler_I2C_Master_0_7",
+        "xci_path": "ip\\I2C_Master_Controler_I2C_Master_0_7\\I2C_Master_Controler_I2C_Master_0_7.xci",
         "inst_hier_path": "I2C_Master_0"
       }
     },

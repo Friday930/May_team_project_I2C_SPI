@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1748105440">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1748108333">
   <File Type="PA-TCL" Name="I2C_Master_Controler_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="I2C_Master_Controler_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="I2C_Master_Controler_wrapper_reports.tcl"/>
@@ -66,5 +66,5 @@
   <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_ilmb_bram_if_cntlr_0"/>
   <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_ilmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_rst_clk_wiz_1_100M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_I2C_Master_0_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="I2C_Master_Controler_I2C_Master_0_7"/>
 </GenRun>

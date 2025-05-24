@@ -53,7 +53,7 @@
 `timescale 1ns/1ps
 
 (* DowngradeIPIdentifiedWarnings = "yes" *)
-module I2C_Master_Controler_I2C_Master_0_5 (
+module I2C_Master_Controler_I2C_Master_0_7 (
   sda,
   scl,
   ready,
