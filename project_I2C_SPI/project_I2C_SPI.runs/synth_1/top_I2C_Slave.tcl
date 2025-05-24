@@ -71,7 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
-set_param synth.incrementalSynthesisCache C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/.Xil/Vivado-44484-korchamHoyoun24/incrSyn
+set_param synth.incrementalSynthesisCache C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-37632-korchamHoyoun24/incrSyn
 set_param xicom.use_bs_reader 1
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
@@ -95,7 +95,10 @@ read_verilog -library xil_defaultlib -sv {
   C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.srcs/sources_1/new/I2C_Slave.sv
   C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.srcs/sources_1/new/top_I2C_Slave.sv
 }
-read_verilog -library xil_defaultlib C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.srcs/sources_1/imports/sources_1/fndController.v
+read_verilog -library xil_defaultlib {
+  C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.srcs/sources_1/imports/CMD_Watch/btn_debounce.v
+  C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.srcs/sources_1/imports/sources_1/fndController.v
+}
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
