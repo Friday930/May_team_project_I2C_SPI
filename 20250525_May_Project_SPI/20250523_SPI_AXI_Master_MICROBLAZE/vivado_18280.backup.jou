@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat May 24 15:06:39 2025
+# Process ID: 18280
+# Current directory: C:/immune_working/CPU/20250523_SPI_AXI_Master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4208 C:\immune_working\CPU\20250523_SPI_AXI_Master\20250523_SPI_AXI_Master.xpr
+# Log file: C:/immune_working/CPU/20250523_SPI_AXI_Master/vivado.log
+# Journal file: C:/immune_working/CPU/20250523_SPI_AXI_Master\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/immune_working/CPU/20250523_SPI_AXI_Master/20250523_SPI_AXI_Master.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/immune_working/CPU/20250523_SPI_AXI_Master/vitis/design_1_wrapper_0524.xsa
+open_bd_design {C:/immune_working/CPU/20250523_SPI_AXI_Master/20250523_SPI_AXI_Master.srcs/sources_1/bd/design_1/design_1.bd}
+ipx::edit_ip_in_project -upgrade true -name mySPI_Peripheral_v1_0_project -directory C:/immune_working/CPU/20250523_SPI_AXI_Master/20250523_SPI_AXI_Master.tmp/mySPI_Peripheral_v1_0_project c:/immune_working/CPU/ip_repo/mySPI_Peripheral_1.0/component.xml
+update_compile_order -fileset sources_1
+close_project
+ipx::edit_ip_in_project -upgrade true -name mySPI_Peripheral_v1_0_project -directory C:/immune_working/CPU/20250523_SPI_AXI_Master/20250523_SPI_AXI_Master.tmp/mySPI_Peripheral_v1_0_project c:/immune_working/CPU/ip_repo/mySPI_Peripheral_1.0/component.xml
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_project

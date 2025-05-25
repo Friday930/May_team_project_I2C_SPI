@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 23 12:55:24 2025
+# Process ID: 23716
+# Current directory: C:/immune_working/CPU/20250522_SPI_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent164 C:\immune_working\CPU\20250522_SPI_test\20250522_SPI_test.xpr
+# Log file: C:/immune_working/CPU/20250522_SPI_test/vivado.log
+# Journal file: C:/immune_working/CPU/20250522_SPI_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/immune_working/CPU/20250522_SPI_test/20250522_SPI_test.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/immune_working/CPU/20250522_SPI_test/tb_master_behav.wcfg
+source tb_master.tcl
+relaunch_sim
+run 50 s
+save_wave_config {C:/immune_working/CPU/20250522_SPI_test/tb_master_behav.wcfg}
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top SPI_Slave [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
