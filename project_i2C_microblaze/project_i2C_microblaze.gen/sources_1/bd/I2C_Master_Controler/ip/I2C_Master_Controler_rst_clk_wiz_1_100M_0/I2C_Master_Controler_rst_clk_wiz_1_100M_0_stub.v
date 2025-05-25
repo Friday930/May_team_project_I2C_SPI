@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Sat May 24 22:38:04 2025
-// Host        : HYPC running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_rst_clk_wiz_1_100M_0/I2C_Master_Controler_rst_clk_wiz_1_100M_0_stub.v
+// Date        : Fri May 23 15:34:25 2025
+// Host        : korchamHoyoun24 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub -rename_top I2C_Master_Controler_rst_clk_wiz_1_100M_0 -prefix
+//               I2C_Master_Controler_rst_clk_wiz_1_100M_0_ I2C_Master_Controler_rst_clk_wiz_1_100M_0_stub.v
 // Design      : I2C_Master_Controler_rst_clk_wiz_1_100M_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcpg236-1

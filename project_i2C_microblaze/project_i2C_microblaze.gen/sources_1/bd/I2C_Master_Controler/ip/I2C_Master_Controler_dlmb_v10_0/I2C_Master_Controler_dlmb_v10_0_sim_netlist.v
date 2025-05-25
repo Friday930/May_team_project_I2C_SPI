@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Sat May 24 22:38:02 2025
-// Host        : HYPC running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.gen/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_dlmb_v10_0/I2C_Master_Controler_dlmb_v10_0_sim_netlist.v
+// Date        : Fri May 23 15:34:23 2025
+// Host        : korchamHoyoun24 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim -rename_top I2C_Master_Controler_dlmb_v10_0 -prefix
+//               I2C_Master_Controler_dlmb_v10_0_ I2C_Master_Controler_dlmb_v10_0_sim_netlist.v
 // Design      : I2C_Master_Controler_dlmb_v10_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -126,7 +126,7 @@ module I2C_Master_Controler_dlmb_v10_0
 endmodule
 
 (* C_EXT_RESET_HIGH = "1" *) (* C_LMB_AWIDTH = "32" *) (* C_LMB_DWIDTH = "32" *) 
-(* C_LMB_NUM_SLAVES = "1" *) (* C_LMB_PROTOCOL = "0" *) (* ORIG_REF_NAME = "lmb_v10" *) 
+(* C_LMB_NUM_SLAVES = "1" *) (* C_LMB_PROTOCOL = "0" *) 
 module I2C_Master_Controler_dlmb_v10_0_lmb_v10
    (LMB_Clk,
     SYS_Rst,

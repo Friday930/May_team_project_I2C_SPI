@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun May 25 14:52:49 2025
+# Process ID: 35156
+# Current directory: C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/I2C_Master_Controler_ilmb_v10_0_synth_1
+# Command line: vivado.exe -log I2C_Master_Controler_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source I2C_Master_Controler_ilmb_v10_0.tcl
+# Log file: C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/I2C_Master_Controler_ilmb_v10_0_synth_1/I2C_Master_Controler_ilmb_v10_0.vds
+# Journal file: C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/I2C_Master_Controler_ilmb_v10_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source I2C_Master_Controler_ilmb_v10_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/harman/May_team_project_I2C_SPI/ip_repo/myip_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/harman/May_team_project_I2C_SPI/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.cache/ip 
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP I2C_Master_Controler_ilmb_v10_0, cache-ID = 0cebd2336d8120b0.
+INFO: [Common 17-206] Exiting Vivado at Sun May 25 14:52:53 2025...

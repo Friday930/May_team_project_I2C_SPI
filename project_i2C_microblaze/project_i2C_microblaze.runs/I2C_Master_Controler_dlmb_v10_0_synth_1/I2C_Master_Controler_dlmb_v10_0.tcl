@@ -70,8 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "I2C_Master_Controler_dlmb_v10_0_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
-set_param xicom.use_bs_reader 1
+set_param chipscope.maxJobs 4
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -86,7 +85,7 @@ set_property parent.project_path C:/harman/May_team_project_I2C_SPI/project_i2C_
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {C:/Users/cong/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store} [current_project]
+set_property board_part_repo_paths {C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_repo_paths {
   c:/harman/May_team_project_I2C_SPI/ip_repo/myip_1.0
