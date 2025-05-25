@@ -36,3 +36,4 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0_1]
 set_property PROGRAM.FILE {C:/harman/May_team_project_I2C_SPI/project_I2C_SPI/project_I2C_SPI.runs/impl_1/top_I2C_Slave.bit} [get_hw_devices xc7a35t_0_1]
 program_hw_devices [get_hw_devices xc7a35t_0_1]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
