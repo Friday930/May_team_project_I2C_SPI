@@ -83,11 +83,17 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_I2C_Master_0_8/I2C_Master_Controler_I2C_Master_0_8.xci">
-          <Proxy FileSetName="I2C_Master_Controler_I2C_Master_0_8"/>
+        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_lmb_bram_0/I2C_Master_Controler_lmb_bram_0.xci">
+          <Proxy FileSetName="I2C_Master_Controler_lmb_bram_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_microblaze_0_0/I2C_Master_Controler_microblaze_0_0.xci">
+          <Proxy FileSetName="I2C_Master_Controler_microblaze_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_mdm_1_0/I2C_Master_Controler_mdm_1_0.xci">
           <Proxy FileSetName="I2C_Master_Controler_mdm_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_dlmb_v10_0/I2C_Master_Controler_dlmb_v10_0.xci">
+          <Proxy FileSetName="I2C_Master_Controler_dlmb_v10_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_ilmb_v10_0/I2C_Master_Controler_ilmb_v10_0.xci">
           <Proxy FileSetName="I2C_Master_Controler_ilmb_v10_0"/>
@@ -95,23 +101,17 @@
         <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_dlmb_bram_if_cntlr_0/I2C_Master_Controler_dlmb_bram_if_cntlr_0.xci">
           <Proxy FileSetName="I2C_Master_Controler_dlmb_bram_if_cntlr_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_dlmb_v10_0/I2C_Master_Controler_dlmb_v10_0.xci">
-          <Proxy FileSetName="I2C_Master_Controler_dlmb_v10_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_rst_clk_wiz_1_100M_0/I2C_Master_Controler_rst_clk_wiz_1_100M_0.xci">
-          <Proxy FileSetName="I2C_Master_Controler_rst_clk_wiz_1_100M_0"/>
+        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_ilmb_bram_if_cntlr_0/I2C_Master_Controler_ilmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="I2C_Master_Controler_ilmb_bram_if_cntlr_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_axi_uartlite_0_0/I2C_Master_Controler_axi_uartlite_0_0.xci">
           <Proxy FileSetName="I2C_Master_Controler_axi_uartlite_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_microblaze_0_0/I2C_Master_Controler_microblaze_0_0.xci">
-          <Proxy FileSetName="I2C_Master_Controler_microblaze_0_0"/>
+        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_rst_clk_wiz_1_100M_0/I2C_Master_Controler_rst_clk_wiz_1_100M_0.xci">
+          <Proxy FileSetName="I2C_Master_Controler_rst_clk_wiz_1_100M_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_lmb_bram_0/I2C_Master_Controler_lmb_bram_0.xci">
-          <Proxy FileSetName="I2C_Master_Controler_lmb_bram_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_ilmb_bram_if_cntlr_0/I2C_Master_Controler_ilmb_bram_if_cntlr_0.xci">
-          <Proxy FileSetName="I2C_Master_Controler_ilmb_bram_if_cntlr_0"/>
+        <CompFileExtendedInfo CompFileName="I2C_Master_Controler.bd" FileRelPathName="ip/I2C_Master_Controler_I2C_Master_0_8/I2C_Master_Controler_I2C_Master_0_8.xci">
+          <Proxy FileSetName="I2C_Master_Controler_I2C_Master_0_8"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/I2C_Master_Controler/hdl/I2C_Master_Controler_wrapper.v">
@@ -246,7 +246,9 @@
   <Runs Version="1" Minor="15">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -346,9 +348,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_I2C_Master_0_8_synth_1" Type="Ft3:Synth" SrcSet="I2C_Master_Controler_I2C_Master_0_8" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_I2C_Master_0_8" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/I2C_Master_Controler_I2C_Master_0_8_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_I2C_Master_0_8_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -358,7 +358,9 @@
     </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -529,9 +531,7 @@
     </Run>
     <Run Id="I2C_Master_Controler_I2C_Master_0_8_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="I2C_Master_Controler_I2C_Master_0_8" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="I2C_Master_Controler_I2C_Master_0_8_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/I2C_Master_Controler_I2C_Master_0_8_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

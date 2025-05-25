@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "I2C_Master_Controler_I2C_Master_0_8_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
@@ -83,7 +84,7 @@ set_property parent.project_path C:/harman/May_team_project_I2C_SPI/project_i2C_
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store} [current_project]
+set_property board_part_repo_paths {C:/Users/cong/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_repo_paths {
   c:/harman/May_team_project_I2C_SPI/ip_repo/myip_1.0
@@ -94,7 +95,7 @@ set_property ip_output_repo c:/harman/May_team_project_I2C_SPI/project_i2C_micro
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.srcs/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_I2C_Master_0_8/I2C_Master_Controler_I2C_Master_0_8.xci
+read_ip -quiet C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.srcs/sources_1/bd/I2C_Master_Controler/ip/I2C_Master_Controler_I2C_Master_0_8/I2C_Master_Controler_I2C_Master_0_8.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
