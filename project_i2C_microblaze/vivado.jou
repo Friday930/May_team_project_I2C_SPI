@@ -11,3 +11,27 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+reset_run I2C_Master_Controler_I2C_Master_0_8_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/impl_1/I2C_Master_Controler_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210183BB7B18A}
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210183B9AA55A}
+set_property PROGRAM.FILE {C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/impl_1/I2C_Master_Controler_wrapper.bit} [get_hw_devices xc7a35t_0_1]
+current_hw_device [get_hw_devices xc7a35t_0_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0_1]
+set_property PROGRAM.FILE {C:/harman/May_team_project_I2C_SPI/project_i2C_microblaze/project_i2C_microblaze.runs/impl_1/I2C_Master_Controler_wrapper.bit} [get_hw_devices xc7a35t_0_1]
+program_hw_devices [get_hw_devices xc7a35t_0_1]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0_1] 0]
