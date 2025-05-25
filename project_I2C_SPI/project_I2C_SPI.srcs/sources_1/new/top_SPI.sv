@@ -6,8 +6,8 @@ module SPI_Slave (
     input        MOSI,
     output       MISO,
     input        SS,
-    output [3:0] fndCom,
-    output [7:0] fndFont
+    output [3:0] an,
+    output [7:0] seg
 );
 
     wire [7:0] si_data;
@@ -51,8 +51,8 @@ module SPI_Slave (
         .reset(reset),
         .fndData(fnd_data1),
         .fndDot(4'b1111),
-        .fndCom(fndCom),
-        .fndFont(fndFont)
+        .fndCom(an),
+        .fndFont(seg)
     );
 endmodule
 
