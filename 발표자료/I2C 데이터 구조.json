@@ -1,4 +1,4 @@
 {signal: [
-  {name: 'clk', wave: 'n.........................', period: 1},
-  {name: "sda",  wave: "1...=...=...=...=...=...1.",data:["slvSel","addr","data1","data2","data3"]},
+  {name: 'clk', wave: 'n............................', period: 1},
+  {name: "sda",  wave: "1...=...=...=...=...=...=..1.",data:["slvSel","addr","data1","data2","data3","ACK/NACK"]},
 ]}
