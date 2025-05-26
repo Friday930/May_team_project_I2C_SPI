@@ -71,3 +71,5 @@
 !*.png
 #jpeg
 !*.jpeg
+#json
+!*.json

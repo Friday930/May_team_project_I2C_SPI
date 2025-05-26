@@ -1,0 +1,7 @@
+{signal: [
+  {name: 'clk', wave: 'n...........................................', period: 1},
+  {name: 'SCLK', wave: 'n..........', period: 4},
+  {name: "MISO",  wave: "0...=...=...=...=...0...=...=...=...=...0...",data:["wrAddr","wdata1","wdata2","wdata3","rdAddr","dumy1","dumy2","dumy3"]},
+  {name: 'MOSI', wave: 'z...........................=...=...=...z...',data:["radta1","rdata2","rdata3"]},
+  {name: 'SS', wave: '1..0.................1.0.................1..'},    
+]}
