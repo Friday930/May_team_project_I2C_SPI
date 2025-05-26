@@ -1,0 +1,1 @@
+-wto "a1de2a1f27844c16a13a6f51e91fbe0f" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "uvm" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "TB_I2C_MASTER_SLAVE_behav" "xil_defaultlib.TB_I2C_MASTER_SLAVE" "xil_defaultlib.glbl" -log "elaborate.log" 
