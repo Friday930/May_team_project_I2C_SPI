@@ -1,6 +1,6 @@
 # SPI, I2C with AXI Microblaze
 
-> **2025년 HARMAN Cemicon Academy 1기** <br/> **개발기간: 2025.05.17 ~ 2025.25**
+> **2025년 HARMAN Semicon Academy 1기** <br/> **개발기간: 2025.05.17 ~ 2025.25**
 
 ## 개발팀 소개
 
