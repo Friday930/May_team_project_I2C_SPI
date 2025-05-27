@@ -94,6 +94,12 @@ I2C와 SPI 통신을 실습하고 분석한 프로젝트로, 하드웨어의 신
     ![I2C Output Stop](./발표자료/I2C%20STOP%20LogicAnalyzer.png)        
     ![I2C Output](./발표자료/I2C%20Master%20LogicAnalyzer.png)        
 
+## 
+- SPI<br/>
+    ![I2C Output](https://postfiles.pstatic.net/MjAyNTA1MjdfMTgy/MDAxNzQ4MzI5Nzc4MTgx.8_E2nsUQTDONYwUU7w2NGg7anolpa7zoUP0B1-R9FYMg.Qyo5iMpfOO5pFkCR9UEtBmtzp6QSjGHZvkdvXIrNW8wg.GIF/SPI%EA%B5%AC%EB%8F%99%EC%98%81%EC%83%81.gif?type=w3840)        
+- I2C<br/>
+    ![I2C Output](https://postfiles.pstatic.net/MjAyNTA1MjdfMTY1/MDAxNzQ4MzI5NzczMzQ1.0rVJIsy3Zy5-IfmdKgNdK-Q7k70kzMUZdIzlQ_JFKj4g.1kulSU3kboCS1GpMRQC4GONyKVyJptcYAsKZ_4g8voog.GIF/I2C%EA%B5%AC%EB%8F%99%EC%98%81%EC%83%81.gif?type=w3840)        
+
 ## 디렉토리 구조
 
 ```bash
