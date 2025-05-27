@@ -63,6 +63,11 @@
 !*.xmp
 #systemVerilog
 !*.sv
+#except ip folders
+!**/ip_repo/**
+#except synopsys Simulation folder
+!SPI_I2C_UVM/**
+
 #drawio
 !*.drawio
 #MD
@@ -73,7 +78,3 @@
 !*.jpeg
 #json
 !*.json
-#except synopsys Simulation folder
-!SPI_I2C_UVM/**
-#except ip folders
-!**/ip_repo/**
