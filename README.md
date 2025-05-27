@@ -1,4 +1,4 @@
-# SPI,I2C with AXI Microblaze
+# SPI, I2C with AXI Microblaze
 > **2025년 HARMAN Cemicon Academy 1기** <br/> **개발기간: 2025.05.17 ~ 2025.25**
 
 ## 개발팀 소개
@@ -8,7 +8,7 @@
 |   [@ParkHoyoun](https://github.com/cong2738)   |    [@Friday930](https://github.com/Friday930)  | [@heyhoo46](https://github.com/heyhoo46)  | [@immune](https://github.com/immune1029)  |
 |   I2C design & develop   |    SPI design & Simulate  | SPI design & develop  | I2C design & Simulate  |
 
-## 프로젝트 소개
+## Introduce
 
 ### 2C & SPI Communication  
 
@@ -41,17 +41,19 @@ This project explores I2C and SPI protocols through hands-on implementation and 
 ![Microblaze](https://img.shields.io/badge/CPU-MicroBlaze-9c27b0?style=for-the-badge)        
 ![AXI](https://img.shields.io/badge/Bus-AXI-673ab7?style=for-the-badge)
 
-## design
+## Design
 
 ### SPI
-
+- transmission design<br/>
+    ![SPI MASTER ASM](./발표자료/spi%20데이터구조.png)        
 - SPI Master ASM<br/>
     ![SPI MASTER ASM](./발표자료/SPI_Master%20ASM.png)        
 - SPI Slave ASM<br/>
     ![SPI Slave ASM](./발표자료/SPI_SLAVE%20ASM.png)        
 
 ### I2C
-
+- transmission design<br/>
+    ![SPI MASTER ASM](./발표자료/i2C%20데이터구조.png)        
 - I2C Master  
     - Block Diagram<br/>
         ![SPI Layout](./발표자료/I2C%20master%20blockdiagram.drawio.png)        
@@ -61,7 +63,7 @@ This project explores I2C and SPI protocols through hands-on implementation and 
     - ASM  FLOW<br/>
         ![I2C Slave ASM](./발표자료/I2C%20ASM-SLAVE.drawio.png)        
 
-## Layout
+## Layout, Circuit
 
 ![I2C Layout](./발표자료/박_프로젝트%20개요.png)
 
@@ -81,11 +83,11 @@ This project explores I2C and SPI protocols through hands-on implementation and 
 - Slave device<br/>
 ![I2C Layout](./발표자료/I2C%20Slave%20회로도.png)    
 
-## Master Signals
+## Signals
 
-- SPI LogicAnalyzer Probe<br/>
+- SPI Master LogicAnalyzer Probe<br/>
     ![I2C Layout](./발표자료/SPI%20마스터%20로직애널라이저.png)        
-- SPI LogicAnalyzer Probe<br/>
+- I2C Master LogicAnalyzer Probe<br/>
     ![I2C Layout](./발표자료/I2C%20START%20LogicAnalyzer.png)        
     ![I2C Layout](./발표자료/I2C%20STOP%20LogicAnalyzer.png)        
     ![I2C Layout](./발표자료/I2C%20Master%20LogicAnalyzer.png)        
@@ -99,7 +101,7 @@ project
 ├── project_I2C : I2C modules
 ├── SPI
 │   ├── 20250522_SPI_master_Slave_moudle : SPI module
-│   ├── 20250523_SPI_AXI_Master_MICROBLAZE : SPI device block
+│   └── 20250523_SPI_AXI_Master_MICROBLAZE : SPI device block
 ├── SPI_I2C_UVM : SPI Simulation(synopsys VCS SIM, verdi)
 └── 발표자료
 ```
