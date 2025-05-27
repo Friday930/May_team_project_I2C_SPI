@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_master_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_master" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="87650001fs"></ZoomEndTime>
+      <Cursor1Time time="48225000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="150"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="42" />
+   <wave_markers>
+      <marker time="64245000" label="" />
+      <marker time="72265000" label="" />
+      <marker time="56235000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/tb_master/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/cpol" type="logic">
+      <obj_property name="ElementShortName">cpol</obj_property>
+      <obj_property name="ObjectShortName">cpol</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/cpha" type="logic">
+      <obj_property name="ElementShortName">cpha</obj_property>
+      <obj_property name="ObjectShortName">cpha</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/rx_data" type="array">
+      <obj_property name="ElementShortName">rx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_data[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/so_state" type="logic">
+      <obj_property name="ElementShortName">so_state</obj_property>
+      <obj_property name="ObjectShortName">so_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/so_data_reg" type="array">
+      <obj_property name="ElementShortName">so_data_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">so_data_reg[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/so_bit_cnt_reg" type="array">
+      <obj_property name="ElementShortName">so_bit_cnt_reg[2:0]</obj_property>
+      <obj_property name="ObjectShortName">so_bit_cnt_reg[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Reg/so_data" type="array">
+      <obj_property name="ElementShortName">so_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">so_data[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/tx_data" type="array">
+      <obj_property name="ElementShortName">tx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_data[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/SCLK" type="logic">
+      <obj_property name="ElementShortName">SCLK</obj_property>
+      <obj_property name="ObjectShortName">SCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/MOSI" type="logic">
+      <obj_property name="ElementShortName">MOSI</obj_property>
+      <obj_property name="ObjectShortName">MOSI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/MISO" type="logic">
+      <obj_property name="ElementShortName">MISO</obj_property>
+      <obj_property name="ObjectShortName">MISO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/SS" type="logic">
+      <obj_property name="ElementShortName">SS</obj_property>
+      <obj_property name="ObjectShortName">SS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/dut/bit_counter_reg" type="array">
+      <obj_property name="ElementShortName">bit_counter_reg[2:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_counter_reg[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/dut/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider14">
+      <obj_property name="label">slv_intf</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/SCLK" type="logic">
+      <obj_property name="ElementShortName">SCLK</obj_property>
+      <obj_property name="ObjectShortName">SCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/MISO" type="logic">
+      <obj_property name="ElementShortName">MISO</obj_property>
+      <obj_property name="ObjectShortName">MISO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/SS" type="logic">
+      <obj_property name="ElementShortName">SS</obj_property>
+      <obj_property name="ObjectShortName">SS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/si_data" type="array">
+      <obj_property name="ElementShortName">si_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">si_data[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/si_done" type="logic">
+      <obj_property name="ElementShortName">si_done</obj_property>
+      <obj_property name="ObjectShortName">si_done</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/so_data" type="array">
+      <obj_property name="ElementShortName">so_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">so_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/so_start" type="logic">
+      <obj_property name="ElementShortName">so_start</obj_property>
+      <obj_property name="ObjectShortName">so_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/so_done" type="logic">
+      <obj_property name="ElementShortName">so_done</obj_property>
+      <obj_property name="ObjectShortName">so_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/sclk_sync0" type="logic">
+      <obj_property name="ElementShortName">sclk_sync0</obj_property>
+      <obj_property name="ObjectShortName">sclk_sync0</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/sclk_sync1" type="logic">
+      <obj_property name="ElementShortName">sclk_sync1</obj_property>
+      <obj_property name="ObjectShortName">sclk_sync1</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/sclk_rising" type="logic">
+      <obj_property name="ElementShortName">sclk_rising</obj_property>
+      <obj_property name="ObjectShortName">sclk_rising</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/sclk_falling" type="logic">
+      <obj_property name="ElementShortName">sclk_falling</obj_property>
+      <obj_property name="ObjectShortName">sclk_falling</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/si_state" type="logic">
+      <obj_property name="ElementShortName">si_state</obj_property>
+      <obj_property name="ObjectShortName">si_state</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/si_data_reg" type="array">
+      <obj_property name="ElementShortName">si_data_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">si_data_reg[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/si_bit_cnt_reg" type="array">
+      <obj_property name="ElementShortName">si_bit_cnt_reg[2:0]</obj_property>
+      <obj_property name="ObjectShortName">si_bit_cnt_reg[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/si_done_reg" type="logic">
+      <obj_property name="ElementShortName">si_done_reg</obj_property>
+      <obj_property name="ObjectShortName">si_done_reg</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider27">
+      <obj_property name="label">slv_reg_fsm</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Reg/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Reg/so_start" type="logic">
+      <obj_property name="ElementShortName">so_start</obj_property>
+      <obj_property name="ObjectShortName">so_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Reg/so_done" type="logic">
+      <obj_property name="ElementShortName">so_done</obj_property>
+      <obj_property name="ObjectShortName">so_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Intf/so_done_reg" type="logic">
+      <obj_property name="ElementShortName">so_done_reg</obj_property>
+      <obj_property name="ObjectShortName">so_done_reg</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_master/slave_dut/U_SPI_Slave_Reg/addr_reg" type="array">
+      <obj_property name="ElementShortName">addr_reg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_reg[1:0]</obj_property>
+   </wvobject>
+</wave_config>

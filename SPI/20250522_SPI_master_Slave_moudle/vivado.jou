@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun May 25 21:52:11 2025
+# Process ID: 11812
+# Current directory: C:/immune_working/CPU/20250522_SPI_master_Slave_moudle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14524 C:\immune_working\CPU\20250522_SPI_master_Slave_moudle\20250522_SPI_test.xpr
+# Log file: C:/immune_working/CPU/20250522_SPI_master_Slave_moudle/vivado.log
+# Journal file: C:/immune_working/CPU/20250522_SPI_master_Slave_moudle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/immune_working/CPU/20250522_SPI_master_Slave_moudle/20250522_SPI_test.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/immune_working/CPU/20250522_SPI_master_Slave_moudle/tb_master_behav.wcfg
+source tb_master.tcl
+run 50 s
+close_sim
