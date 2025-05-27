@@ -6,7 +6,7 @@
 
 |박호윤                                          |박지수                                            |임윤재                                     |함영은                                      |                                                                               
 | :--------------------------------------------: | :--------------------------------------------: | :---------------------------------------: | :---------------------------------------: |
-|   [@ParkHoyoun](https://github.com/cong2738)   |    [@Friday930](https://github.com/Friday930)  | [@heyhoo46](https://github.com/heyhoo46)  | [@immune](https://github.com/immune1029)  |
+|   [@ParkHoyoun](https://github.com/cong2738)   |    [@Friday930](https://github.com/Friday930)  | [@immune](https://github.com/immune1029)  | [@heyhoo46](https://github.com/heyhoo46)  |
 |              I2C design & develop              |              SPI design & Simulate             |            SPI design & develop           |           I2C design & Simulate           |
 
 ## Introduce
