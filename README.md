@@ -97,7 +97,7 @@ project
 ├── project_i2C_microblaze : I2C device block
 ├── project_I2C_SIMULATION : I2C Simulation(vivado SV SIM)
 ├── project_I2C : I2C modules
-├── SPI : I2C Master device
+├── SPI
 │   ├── 20250522_SPI_master_Slave_moudle : SPI module
 │   ├── 20250523_SPI_AXI_Master_MICROBLAZE : SPI device block
 ├── SPI_I2C_UVM : SPI Simulation(synopsys VCS SIM, verdi)
