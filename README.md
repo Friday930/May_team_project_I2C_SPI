@@ -11,7 +11,7 @@
 
 ## Introduce
 
-- 2C & SPI Communication  
+- I2C & SPI Communication  
 Learn how microcontrollers talk to peripheral devices — by actually making them talk.
 This project explores I2C and SPI protocols through hands-on implementation and analysis.<br/>
 **"Nothing beats learning low-level communication than writing it yourself."**<br/>
