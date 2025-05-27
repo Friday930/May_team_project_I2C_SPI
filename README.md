@@ -4,22 +4,21 @@
 
 ## 개발팀 소개
 
-|      박호윤       |          박지수         |        임윤재        |          함영은         |                                                                               
-| :------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+|박호윤                                          |박지수                                            |임윤재                                     |함영은                                      |                                                                               
+| :--------------------------------------------: | :--------------------------------------------: | :---------------------------------------: | :---------------------------------------: |
 |   [@ParkHoyoun](https://github.com/cong2738)   |    [@Friday930](https://github.com/Friday930)  | [@heyhoo46](https://github.com/heyhoo46)  | [@immune](https://github.com/immune1029)  |
-|   I2C design & develop   |    SPI design & Simulate  | SPI design & develop  | I2C design & Simulate  |
+|              I2C design & develop              |              SPI design & Simulate             |            SPI design & develop           |           I2C design & Simulate           |
 
 ## Introduce
 
 ### 2C & SPI Communication  
-
-CPU가 주변 장치가 대화하는 법, 직접 구현하며 배운다.
-I2C와 SPI 통신을 실습하고 분석한 프로젝트로, 하드웨어의 신호 흐름을 눈으로 보고, 손으로 느끼며 이해한다.  
-**"직접 통신을 구현해보는 것만큼 확실한 공부법은 없다."**<br/>
-<br/>
 Learn how microcontrollers talk to peripheral devices — by actually making them talk.
-This project explores I2C and SPI protocols through hands-on implementation and analysis.  
-**"Nothing beats learning low-level communication than writing it yourself."**
+This project explores I2C and SPI protocols through hands-on implementation and analysis.<br/>
+**"Nothing beats learning low-level communication than writing it yourself."**<br/>
+<br/>
+CPU가 주변 장치가 대화하는 법, 직접 구현하며 배운다.
+I2C와 SPI 통신을 실습하고 분석한 프로젝트로, 하드웨어의 신호 흐름을 눈으로 보고, 손으로 느끼며 이해한다.<br/>
+**"직접 통신을 구현해보는 것만큼 확실한 공부법은 없다."**
 
 
 ## Stacks
@@ -47,7 +46,7 @@ This project explores I2C and SPI protocols through hands-on implementation and 
 ### SPI
 
 - transmission design<br/>
-    ![SPI MASTER ASM](./발표자료/spi%20데이터구조.png)        
+    ![SPI transmission design](./발표자료/spi%20데이터구조.png)        
 - SPI Master ASM<br/>
     ![SPI MASTER ASM](./발표자료/SPI_Master%20ASM.png)        
 - SPI Slave ASM<br/>
@@ -56,10 +55,10 @@ This project explores I2C and SPI protocols through hands-on implementation and 
 ### I2C
 
 - transmission design<br/>
-    ![SPI MASTER ASM](./발표자료/i2C%20데이터구조.png)        
+    ![SPI transmission design](./발표자료/i2C%20데이터구조.png)        
 - I2C Master  
     - Block Diagram<br/>
-        ![SPI Layout](./발표자료/I2C%20master%20blockdiagram.drawio.png)        
+        ![I2C Master Diagram](./발표자료/I2C%20master%20blockdiagram.drawio.png)        
     - ASM FLOW<br/>
         ![I2C Master ASM](./발표자료/I2C%20ASM-MASTER.drawio.png)        
 - I2C Slave<br/>
@@ -68,32 +67,32 @@ This project explores I2C and SPI protocols through hands-on implementation and 
 
 ## Layout, Circuit
 
-![I2C Layout](./발표자료/박_프로젝트%20개요.png)
+![Layout](./발표자료/박_프로젝트%20개요.png)
 
 ### SPI
 
-![I2C Layout](./발표자료/SPI%20간략한%20회로.drawio.png)        
+![SPI Layout](./발표자료/SPI%20간략한%20회로.drawio.png)        
 - Master device<br/>
-![I2C Layout](./발표자료/SPI마스터블록디자인.png)        
+![SPI Circuit](./발표자료/SPI마스터블록디자인.png)        
 - Slave device<br/>
-![I2C Layout](./발표자료/SPI%20슬레이브%20회로도.png)        
+![SPI Circuit](./발표자료/SPI%20슬레이브%20회로도.png)        
 
 ### I2C
 
 ![I2C Layout](./발표자료/I2C%20시뮬레이션%20회로.drawio.png)        
 - Master device<br/>
-![I2C Layout](./발표자료/I2C%20MASTER%20블록디자인.png)        
+![I2C Block Circuit](./발표자료/I2C%20MASTER%20블록디자인.png)        
 - Slave device<br/>
-![I2C Layout](./발표자료/I2C%20Slave%20회로도.png)    
+![I2C Circuit](./발표자료/I2C%20Slave%20회로도.png)    
 
-## Signals
+## Circuit Output
 
 - SPI Master LogicAnalyzer Probe<br/>
-    ![I2C Layout](./발표자료/SPI%20마스터%20로직애널라이저.png)        
+    ![SPI Output](./발표자료/SPI%20마스터%20로직애널라이저.png)        
 - I2C Master LogicAnalyzer Probe<br/>
-    ![I2C Layout](./발표자료/I2C%20START%20LogicAnalyzer.png)        
-    ![I2C Layout](./발표자료/I2C%20STOP%20LogicAnalyzer.png)        
-    ![I2C Layout](./발표자료/I2C%20Master%20LogicAnalyzer.png)        
+    ![I2C Output Start](./발표자료/I2C%20START%20LogicAnalyzer.png)        
+    ![I2C Output Stop](./발표자료/I2C%20STOP%20LogicAnalyzer.png)        
+    ![I2C Output](./발표자료/I2C%20Master%20LogicAnalyzer.png)        
 
 ## 디렉토리 구조
 
