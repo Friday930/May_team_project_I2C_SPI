@@ -83,9 +83,9 @@ This project explores I2C and SPI protocols through hands-on implementation and 
 
 ## Master Signals
 
--SPI LogicAnalyzer Probe<br/>
+- SPI LogicAnalyzer Probe<br/>
     ![I2C Layout](./발표자료/SPI%20마스터%20로직애널라이저.png)        
--SPI LogicAnalyzer Probe<br/>
+- SPI LogicAnalyzer Probe<br/>
     ![I2C Layout](./발표자료/I2C%20START%20LogicAnalyzer.png)        
     ![I2C Layout](./발표자료/I2C%20STOP%20LogicAnalyzer.png)        
     ![I2C Layout](./발표자료/I2C%20Master%20LogicAnalyzer.png)        
