@@ -48,7 +48,7 @@ This project explores I2C and SPI protocols through hands-on implementation and 
 - SPI Master ASM<br/>
     ![SPI MASTER ASM](./발표자료/SPI_Master%20ASM.png)        
 - SPI Slave ASM<br/>
-    ![SPI Slave ASM](./발표자료/SPI_Slave%20ASM.png)        
+    ![SPI Slave ASM](./발표자료/SPI_SLAVE%20ASM.png)        
 
 ### I2C
 
