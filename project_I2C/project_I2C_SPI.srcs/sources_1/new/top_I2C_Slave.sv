@@ -27,19 +27,13 @@ module top_I2C_Slave (
         .ready   (ready)
     );
 
-    btn_debounce u_btn_debounce (
+    logic [1:0] sel;
+    btn_push_counter u_btn_count (
         .clk  (clk),
         .reset(reset),
-        .i_btn(btn),
-        .o_btn(btdb)
+        .btn  (btn),
+        .count  (sel)
     );
-
-    logic [1:0] sel;
-    always_ff @(posedge btdb, posedge reset) begin : blockName
-        if (reset) begin
-            sel = 0;
-        end else sel <= sel + 1;
-    end
 
     logic [7:0] bcd;
     always_comb begin : fndDataSel
@@ -60,4 +54,24 @@ module top_I2C_Slave (
         .fndFont(seg)
     );
 
+endmodule
+
+module btn_push_counter (
+    input  logic       clk,
+    input  logic       reset,
+    input  logic       btn,
+    output logic [1:0] count
+);
+    btn_debounce u_btn_debounce (
+        .clk  (clk),
+        .reset(reset),
+        .i_btn(btn),
+        .o_btn(btdb)
+    );
+
+    always_ff @(posedge btdb, posedge reset) begin : blockName
+        if (reset) begin
+            count = 0;
+        end else count <= count + 1;
+    end
 endmodule
