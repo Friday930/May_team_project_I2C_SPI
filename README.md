@@ -1,4 +1,5 @@
 # SPI, I2C with AXI Microblaze
+
 > **2025년 HARMAN Cemicon Academy 1기** <br/> **개발기간: 2025.05.17 ~ 2025.25**
 
 ## 개발팀 소개
@@ -95,6 +96,7 @@ This project explores I2C and SPI protocols through hands-on implementation and 
     ![I2C Layout](./발표자료/I2C%20Master%20LogicAnalyzer.png)        
 
 ## 디렉토리 구조
+
 ```bash
 project
 ├── C : program demo
