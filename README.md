@@ -44,6 +44,7 @@ This project explores I2C and SPI protocols through hands-on implementation and 
 ## Design
 
 ### SPI
+
 - transmission design<br/>
     ![SPI MASTER ASM](./발표자료/spi%20데이터구조.png)        
 - SPI Master ASM<br/>
@@ -52,6 +53,7 @@ This project explores I2C and SPI protocols through hands-on implementation and 
     ![SPI Slave ASM](./발표자료/SPI_SLAVE%20ASM.png)        
 
 ### I2C
+
 - transmission design<br/>
     ![SPI MASTER ASM](./발표자료/i2C%20데이터구조.png)        
 - I2C Master  
