@@ -62,7 +62,9 @@ This project explores I2C and SPI protocols through hands-on implementation and 
         ![I2C Slave ASM](./발표자료/I2C%20ASM-SLAVE.drawio.png)        
 
 ## Layout
-![I2C Layout](./발표자료/박_프로젝트%20개요.png)        
+
+![I2C Layout](./발표자료/박_프로젝트%20개요.png)
+
 ### SPI
 
 ![I2C Layout](./발표자료/SPI%20간략한%20회로.drawio.png)        
@@ -77,7 +79,16 @@ This project explores I2C and SPI protocols through hands-on implementation and 
 - Master device<br/>
 ![I2C Layout](./발표자료/I2C%20MASTER%20블록디자인.png)        
 - Slave device<br/>
-![I2C Layout](./발표자료/I2C%20Slave%20회로도.png)        
+![I2C Layout](./발표자료/I2C%20Slave%20회로도.png)    
+
+## Master Signals
+
+-SPI LogicAnalyzer Probe<br/>
+    ![I2C Layout](./발표자료/SPI%20마스터%20로직애널라이저.png)        
+-SPI LogicAnalyzer Probe<br/>
+    ![I2C Layout](./발표자료/I2C%20START%20LogicAnalyzer.png)        
+    ![I2C Layout](./발표자료/I2C%20STOP%20LogicAnalyzer.png)        
+    ![I2C Layout](./발표자료/I2C%20Master%20LogicAnalyzer.png)        
 
 ## 디렉토리 구조
 ```bash
