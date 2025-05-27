@@ -73,3 +73,5 @@
 !*.jpeg
 #json
 !*.json
+#except synopsys Simulation folder
+!SPI_I2C_UVM/**
