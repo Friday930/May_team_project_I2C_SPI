@@ -1,6 +1,6 @@
 # SPI, I2C with AXI Microblaze
 
-> **2025년 HARMAN Cemicon Academy 1기** <br/> **개발기간: 2025.05.17 ~ 2025.25**
+> **2025년 HARMAN Semicon Academy 1기** <br/> **개발기간: 2025.05.17 ~ 2025.25**
 
 ## 개발팀 소개
 
@@ -11,7 +11,7 @@
 
 ## Introduce
 
-- 2C & SPI Communication  
+- I2C & SPI Communication  
 Learn how microcontrollers talk to peripheral devices — by actually making them talk.
 This project explores I2C and SPI protocols through hands-on implementation and analysis.<br/>
 **"Nothing beats learning low-level communication than writing it yourself."**<br/>
