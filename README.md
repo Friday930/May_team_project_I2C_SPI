@@ -94,8 +94,8 @@ I2C와 SPI 통신을 실습하고 분석한 프로젝트로, 하드웨어의 신
 
 ## video  
 - SPI, I2C<br/>
-    ![SPI구동영상](https://postfiles.pstatic.net/MjAyNTA1MjdfMTgy/MDAxNzQ4MzI5Nzc4MTgx.8_E2nsUQTDONYwUU7w2NGg7anolpa7zoUP0B1-R9FYMg.Qyo5iMpfOO5pFkCR9UEtBmtzp6QSjGHZvkdvXIrNW8wg.GIF/SPI%EA%B5%AC%EB%8F%99%EC%98%81%EC%83%81.gif?type=w3840)
-    ![I2C구동영상](httpshttps://m.blog.naver.com/PostView.naver?blogId=cong2738&logNo=223879633843&navType=by&view=img_3)<br/>  
+    ![SPI구동영상](https://postfiles.pstatic.net/MjAyNTA1MjdfMTY1/MDAxNzQ4MzI5NzczMzQ1.0rVJIsy3Zy5-IfmdKgNdK-Q7k70kzMUZdIzlQ_JFKj4g.1kulSU3kboCS1GpMRQC4GONyKVyJptcYAsKZ_4g8voog.GIF/I2C%EA%B5%AC%EB%8F%99%EC%98%81%EC%83%81.gif?type=w3840)
+    ![I2C구동영상](https://postfiles.pstatic.net/MjAyNTA1MzBfMTIy/MDAxNzQ4NTQ0NTE5ODYx.gVIZN1fNdZ8PpO5oSpZfFQ-ktJwEtWzgrvBirKnTgzog.8m49Rc3s44-fpyPHICq0ZUGk2e3t8Lg1RCqTTy2xT70g.GIF/image44%EF%BC%8D1.gif?type=w3840)<br/>  
 
 ## 디렉토리 구조
 
