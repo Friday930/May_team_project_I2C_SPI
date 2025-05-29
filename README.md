@@ -15,7 +15,6 @@
 Learn how microcontrollers talk to peripheral devices — by actually making them talk.
 This project explores I2C and SPI protocols through hands-on implementation and analysis.<br/>
 **"Nothing beats learning low-level communication than writing it yourself."**<br/>
-<br/>
 CPU가 주변 장치가 대화하는 법, 직접 구현하며 배운다.
 I2C와 SPI 통신을 실습하고 분석한 프로젝트로, 하드웨어의 신호 흐름을 눈으로 보고, 손으로 느끼며 이해한다.<br/>
 **"직접 하드웨어을 구현해보는 것만큼 확실한 공부법은 없다."**<br/>
