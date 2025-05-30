@@ -11,3 +11,4 @@
 #-----------------------------------------------------------
 start_gui
 open_project {C:/harman/_HARMAN Team Project/May_team_project_I2C_SPI/project_I2C_SIMULATION/project_I2C_SPI.xpr}
+update_compile_order -fileset sources_1
