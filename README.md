@@ -93,9 +93,16 @@ I2C와 SPI 통신을 실습하고 분석한 프로젝트로, 하드웨어의 신
     ![I2C Output](./발표자료/I2C%20Master%20LogicAnalyzer.png)        
 
 ## video  
-- SPI, I2C<br/>
-<img alt = "SPI" src="./발표자료/SPI.gif" width="30%" height="auto"/>
-<img alt = "I2C" src="./발표자료/I2C.gif" width="30%" height="auto"/>
+<table>
+　　<tr>
+　　　　<td>SPI</td>
+　　　　<td>I2C</td>
+　　</tr>
+　　<tr>
+　　　　<td><img alt = "SPI" src="./발표자료/SPI.gif" width="75%" height="auto"/></td>
+　　　　<td><img alt = "I2C" src="./발표자료/I2C.gif" width="100%" height="auto"/></td>
+　　</tr>
+</table>
 
 ## 디렉토리 구조
 
