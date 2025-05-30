@@ -94,8 +94,8 @@ I2C와 SPI 통신을 실습하고 분석한 프로젝트로, 하드웨어의 신
 
 ## video  
 - SPI, I2C<br/>
-<img alt = "SPI" src="./발표자료/SPI.gif" width="40%" height="auto"/>
-<img alt = "I2C" src="./발표자료/I2C.gif" width="40%" height="auto"/>
+<img alt = "SPI" src="./발표자료/SPI.gif" width="30%" height="auto"/>
+<img alt = "I2C" src="./발표자료/I2C.gif" width="30%" height="auto"/>
 
 ## 디렉토리 구조
 
