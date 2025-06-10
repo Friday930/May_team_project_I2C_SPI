@@ -40,6 +40,7 @@ module I2C_Slave #(
     assign sda   = IO_Sel ? 1'bz : sda_reg;
     assign ready = (state == IDLE);
 
+    // synchronization_InputSignal
     logic scl_R,scl_F;
     logic D1,D2;
     always_ff @( posedge clk ) begin : edge_detect
