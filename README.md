@@ -49,7 +49,15 @@ I2C와 SPI 통신을 실습하고 분석한 프로젝트로, 하드웨어의 신
 - SPI Master ASM<br/>
     ![SPI MASTER ASM](./발표자료/SPI_Master%20ASM.png)        
 - SPI Slave ASM<br/>
-    ![SPI Slave ASM](./발표자료/SPI_SLAVE%20ASM.png)        
+    ![SPI Slave ASM](./발표자료/SPI_SLAVE%20ASM.png)
+
+#### SPI UVM Simulation
+-Verdi<br/>
+<img width="1912" height="349" alt="image" src="https://github.com/user-attachments/assets/7823e389-242c-46e0-8c1b-191e98e11668" /><br/>
+
+-VCS(UVM)<br/>
+<img width="405" height="492" alt="image" src="https://github.com/user-attachments/assets/68c13567-52f4-4b6e-ba5f-3c10d8d02bf1" /><br/>
+<img width="1670" height="652" alt="image" src="https://github.com/user-attachments/assets/7d265870-1d4b-4f05-b55b-4bd08319d618" /><br/>
 
 ### I2C
 
@@ -65,6 +73,11 @@ I2C와 SPI 통신을 실습하고 분석한 프로젝트로, 하드웨어의 신
         ![I2C Slave ASM](./발표자료/I2C%20ASM-SLAVE.drawio.png) 
     - ISSUE 
         - CDC sync ISSUE: 보드간 CDC구간 메타스테이트 이슈가 발생, 엣지 디텍터를 싱크로나이저로서 사용함
+
+#### I2C Simulation
+-I2C DATA SIM
+<img width="2231" height="333" alt="image" src="https://github.com/user-attachments/assets/5c6559ef-b307-4a88-abc2-301c12d765e5" />
+
 
 ## Layout, Circuit
 
